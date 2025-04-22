@@ -1,0 +1,54 @@
+#ajouterSortieBtn {
+    -fx-font-family: "DM Sans";
+    -fx-font-size: 14px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-padding: 5px 10px;
+    -fx-background-color: #3A7B8C;
+    -fx-text-fill: white;
+
+}
+#SortiesTable {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-border-color: transparent;
+}
+
+#SortiesTable .column-header-background {
+    -fx-background-color: transparent;
+}
+
+#SortiesTable .filler {
+    -fx-background-color: transparent;
+}
+
+#SortiesTable .table-row-cell {
+    -fx-background-color: transparent;
+}
+
+#SortiesTable .table-cell {
+    -fx-background-color: transparent;
+    -fx-alignment: CENTER;
+
+}
+
+#SortiesTable .table-column {
+    -fx-background-color: transparent;
+}
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #333;
+    -fx-font-size: 14px;
+}
+
+.nav-button:hover {
+    -fx-background-color: #3A7B8C;
+}
+
+.nav-button.active {
+    -fx-background-color: #3A7B8C ;
+    -fx-text-fill: white;
+}
+

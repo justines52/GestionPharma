@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Regular.ttf');
+}
+*{
+    -fx-font-family: Poppins;
+    -fx-background-color: #DBECF0;
+}
+#mainContent{
+    -fx-background-color :#E9F3F6;
+}
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #333;
+    -fx-font-size: 14px;
+}
+
+.nav-button:hover {
+    -fx-background-color: #3A7B8C;
+}
+
+.nav-button.active {
+    -fx-background-color: #3A7B8C ;
+    -fx-text-fill: white;
+}
+
