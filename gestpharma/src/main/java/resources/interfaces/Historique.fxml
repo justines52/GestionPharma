@@ -67,7 +67,7 @@
                                     <content>
                                         <AnchorPane>
                                             <children>
-                                                <TableView fx:id="reservationTable" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                <TableView fx:id="HistoriqueTable" stylesheets="@../Styles/Historique.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                                     <columns>
                                           <TableColumn fx:id="receptionsortieColumn1" minWidth="-1.0" text="Entrée/Sortie" />
                                                         <TableColumn fx:id="receptionsortieColumn" minWidth="-1.0" text=" Date reception/sortie" />
