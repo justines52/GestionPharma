@@ -62,7 +62,7 @@
                                  <children>
                                     <TableView fx:id="EntreeTable" stylesheets="@../Styles/Entree.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                        <columns>
-                                          <TableColumn fx:id="receptionColumn" minWidth="-1.0" text=" Reception" />
+                                          <TableColumn fx:id="receptionColumn" minWidth="-1.0" text=" Date de Reception" />
                                           <TableColumn fx:id="bilColumn" text=" N° Bil " />
                                           <TableColumn fx:id="factureColumn" text="N° Facture" />
                                           <TableColumn fx:id="produitColumn" text="Produit" />
