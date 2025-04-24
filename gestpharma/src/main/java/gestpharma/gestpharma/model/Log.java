@@ -9,6 +9,7 @@ public class Log {
     private LogType type;
 
     public Log() {}
+
     public Log(String ID_commande, String ID_log, LocalDateTime date_log , LogType type) {
         this.ID_commande = ID_commande;
         this.ID_log = ID_log;

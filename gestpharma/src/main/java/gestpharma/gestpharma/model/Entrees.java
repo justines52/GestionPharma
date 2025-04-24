@@ -13,6 +13,7 @@ public class Entrees {
     private int prix;
 
     public Entrees() {}
+
     public Entrees ( LogType type , int numero_Billet_Salle , String ID_facture , String ID_Produit , String posologie, int quantite, LocalDate date_expiration, int prix ) {
         this.type = type;
         this.numero_Billet_Salle = numero_Billet_Salle;
