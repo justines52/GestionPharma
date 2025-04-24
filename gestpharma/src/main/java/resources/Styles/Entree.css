@@ -1,0 +1,39 @@
+#ajouterEntreeBtn {
+    -fx-font-family: "DM Sans";
+    -fx-font-size: 14px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-padding: 5px 10px;
+    -fx-background-color: #3A7B8C;
+    -fx-text-fill: white;
+
+}
+#EntreeTable {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-border-color: transparent;
+}
+
+#EntreeTable .column-header-background {
+    -fx-background-color: transparent;
+}
+
+#EntreeTable .filler {
+    -fx-background-color: transparent;
+}
+
+#reservationTable .table-row-cell {
+    -fx-background-color: transparent;
+}
+
+#EntreeTable .table-cell {
+    -fx-background-color: transparent;
+    -fx-alignment: CENTER;
+
+}
+
+#EntreeTable .table-column {
+    -fx-background-color: transparent;
+}

@@ -1,0 +1,44 @@
+#HistoriqueTable {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-border-color: transparent;
+}
+
+#HistoriqueTable .column-header-background {
+    -fx-background-color: transparent;
+}
+
+#HistoriqueTable .filler {
+    -fx-background-color: transparent;
+}
+
+#HistoriqueTable .table-row-cell {
+    -fx-background-color: transparent;
+}
+
+#HistoriqueTable .table-cell {
+    -fx-background-color: transparent;
+    -fx-alignment: CENTER;
+
+}
+
+#HistoriqueTable .table-column {
+    -fx-background-color: transparent;
+}
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #333;
+    -fx-font-size: 14px;
+}
+
+.nav-button:hover {
+    -fx-background-color: #3A7B8C;
+}
+
+.nav-button.active {
+    -fx-background-color: #3A7B8C ;
+    -fx-text-fill: white;
+}
+

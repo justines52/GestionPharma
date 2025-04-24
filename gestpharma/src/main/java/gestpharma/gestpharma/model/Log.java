@@ -6,13 +6,14 @@ public class Log {
     private String ID_commande;
     private String ID_log;
     private LocalDateTime date_log;
-    //private type come back
+    private LogType type;
 
     public Log() {}
-    public Log(String ID_commande, String ID_log, LocalDateTime date_log) {
+    public Log(String ID_commande, String ID_log, LocalDateTime date_log , LogType type) {
         this.ID_commande = ID_commande;
         this.ID_log = ID_log;
         this.date_log = date_log;
+        this.type = type;
     }
 
     //getters
@@ -26,6 +27,7 @@ public class Log {
     public LocalDateTime getDate_log() {
         return date_log;
     }
+    public LogType getType() { return type; }
 
     //setters
 
@@ -38,4 +40,5 @@ public class Log {
     public void setDate_log(LocalDateTime date_log) {
         this.date_log = date_log;
     }
+    public void setType(LogType type) { this.type = type; }
 }
