@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url("../Fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url("../Fonts.Poppins/Poppins-Bold.ttf");
+}
+*{
+    font-family: Poppins;
+}
+.textfield{
+    -fx-background-color: transparent;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+
+}
+.searchbar{
+    -fx-background-color: transparent;
+    -fx-prompt-text-fill: #8C8C8C;
+
+    -fx-border-color: transparent transparent #000000 transparent; /* Bordure inférieure noire */
+    -fx-border-width: 0 0 2px 0; /* Épaisseur de la bordure inférieure */
+}
+.sidebarBtn{
+    -fx-alignment: center-left; /* Aligne le texte à gauche horizontalement tout en le gardant centré verticalement */
+    -fx-padding: 0 15px 0 15px; /* Ajuste l'espacement intérieur du bouton (gauche, haut, droite, bas) */
+
+}
+.sidebarUnderBtn{
+    -fx-alignment: center-left; /* Aligne le texte à gauche horizontalement tout en le gardant centré verticalement */
+    -fx-padding: 0 15px 0 15px; /* Ajuste l'espacement intérieur du bouton (gauche, haut, droite, bas) */
+}
+.sidebarUnderBtn:hover{
+    -fx-text-fill: #3A7B8C;
+}
+.sidebarUnderBtn:hover FontIcon{
+    -fx-fill: #3A7B8C;
+}
+.sidebarUnderBtn:selected FontIcon{
+    -fx-fill: #3A7B8C;
+}
+.sidebarUnderBtn:selected{
+    -fx-fill: #3A7B8C;
+    -fx-text-fill: #3A7B8C;
+}
+.sidebarBtn:hover{
+    -fx-background-color: #3A7B8C;
+    -fx-text-fill: white;
+
+}
+.sidebarBtn:hover FontIcon{
+  -fx-fill: white;
+}
+.sidebarBtn:selected{
+    -fx-background-color: #3A7B8C;
+    -fx-text-fill: white;
+}
+.sidebarBtn:selected FontIcon{
+    -fx-fill: white;
+}
+/* TABLEVIEW GLOBAL */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+}
+/* pour enlver l'espace entre les column du tableview */
+.table-view .column-header-background ,.table-view .column-header{
+    -fx-padding: 0;
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+}
+.table-view .column-header .label {
+    -fx-text-fill: #8c8c8c;
+    -fx-background-color: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+}
+
+/* LIGNES */
+.table-view .table-row-cell {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+.table-view .table-row-cell:selected {
+    -fx-background-color: #dceff3;
+}
+
+/* CELLULES */
+.table-view .table-cell {
+    -fx-text-fill: #000000;
+    -fx-font-size: 13px;
+}
+#deconnexionBtn{
+    -fx-background-color: #3A7B8C ;
+    -fx-text-fill: white ;
+    -fx-effect: dropshadow(gaussian, rgba(43, 122, 139, 0.3), 20, 0.3, 0, 0);
+
+}
+.buttonN{
+    -fx-background-color: white ;
+    -fx-text-fill: #3A7B8C ;
+    -fx-border-radius: 10px ;
+    -fx-background-radius: 15 ;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 4);
+
+}
+.buttonN FontIcon{
+    -fx-fill: #3A7B8C !important;
+}
+#anchorPane{
+    -fx-background-color: #DBECF0;
+}
+.labelVert{
+    -fx-text-fill: #3A7B8C;
+}
