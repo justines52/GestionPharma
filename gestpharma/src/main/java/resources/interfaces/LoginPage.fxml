@@ -5,6 +5,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -85,9 +86,7 @@
 
                      <!-- Champs d'identifiant -->
                      <TextField fx:id="UsernameTextField" promptText="Entrez le nom d'utilisateur" />
-
-                     <!-- Champs de mot de passe -->
-                     <TextField fx:id="PasswordTextField" promptText="Mot de passe" />
+                     <PasswordField fx:id="PasswordField" promptText="Mot de passe" />
 
                      <!-- Conteneur pour le Label (à gauche) et le Hyperlink (à droite) -->
                      <HBox fx:id="mdpoubliéHbox" alignment="CENTER_LEFT" spacing="20.0" styleClass="backgroundinvisible">

@@ -4,6 +4,7 @@ import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
@@ -28,7 +29,7 @@ public class LoginPageController {
     private TextField UsernameTextField;
 
     @FXML
-    private TextField PasswordTextField;
+    private PasswordField PasswordField;
 
     @FXML
     private Label connextezVousLabel;
@@ -103,13 +104,13 @@ public class LoginPageController {
         UsernameTextField.prefWidthProperty().bind(connexionButton.prefWidthProperty());
         UsernameTextField.prefHeightProperty().bind(connexionButton.prefHeightProperty());
 
-        PasswordTextField.prefWidthProperty().bind(connexionButton.prefWidthProperty());
-        PasswordTextField.prefHeightProperty().bind(connexionButton.prefHeightProperty());
+        PasswordField.prefWidthProperty().bind(connexionButton.prefWidthProperty());
+        PasswordField.prefHeightProperty().bind(connexionButton.prefHeightProperty());
 
         // Rendre le texte des labels proportionnel à la taille de la fenêtre
         connextezVousLabel.styleProperty().bind(stage.widthProperty().multiply(0.02).asString("-fx-font-size: %.0fpx;"));
         aLaPharmacieLabel.styleProperty().bind(stage.widthProperty().multiply(0.015).asString("-fx-font-size: %.0fpx;"));
-        contactezVotreAdminLabel.styleProperty().bind(stage.widthProperty().multiply(0.007).asString("-fx-font-size: %.0fpx;"));
+        contactezVotreAdminLabel.styleProperty().bind(stage.widthProperty().multiply(0.009).asString("-fx-font-size: %.0fpx;"));
 
         // Rendre les images responsives
         pharmacie.fitWidthProperty().bind(stage.widthProperty().multiply(0.2)); // 20% de la largeur
