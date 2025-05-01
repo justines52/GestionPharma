@@ -36,5 +36,4 @@ public interface CommandeDao {
     @SqlQuery("SELECT * FROM Commande WHERE ID_produit = :ID_produit")
     @RegisterBeanMapper(Commande.class)
     List<Commande> findByProduit(@Bind("ID_produit") String ID_produit);
-
 }

@@ -26,5 +26,4 @@ public interface ContenuDao {
     @SqlQuery("SELECT * FROM Contenu WHERE ID_produit = :ID_produit")
     @RegisterBeanMapper(Contenu.class)
     List<Contenu> findByProduit(@Bind("ID_produit") String ID_produit);
-
 }

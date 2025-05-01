@@ -28,5 +28,4 @@ public interface LoginDao {
     @SqlQuery("SELECT * FROM login WHERE nom_utilisateur = :nom_utilisateur")
     @RegisterBeanMapper(Login.class)
     Login getByUsername(@Bind("nom_utilisateur") String nom_utilisateur);
-
 }

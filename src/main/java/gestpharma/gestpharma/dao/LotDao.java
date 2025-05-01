@@ -32,7 +32,6 @@ public interface LotDao {
     WHERE ID_lot = :ID_lot
 """)
     void update(@BindBean Lot lot);
-
 }
 
 

@@ -24,5 +24,4 @@ public interface FactureDao {
 
     @SqlUpdate("INSERT INTO Facture (ID_facture, date_facture,ID_fournisseur) VALUES (:ID_facture, :date_facture,:ID_fournisseur)")
     void insert(@BindBean Facture facture);
-
 }
