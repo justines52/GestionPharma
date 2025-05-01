@@ -20,11 +20,11 @@ public interface ProduitDao {
     @RegisterBeanMapper(Produit.class)
     Produit getById(@Bind("ID_produit") String ID_produit);
 
-    @SqlUpdate("INSERT INTO Produit (ID_produit, quantite, prix_unitaire) VALUES (:ID_produit, :quantite, :prix_unitaire)")
+    @SqlUpdate("INSERT INTO Produit (ID_produit,prix_unitaire) VALUES (:ID_produit,:prix_unitaire)")
     @GetGeneratedKeys
     int insert(@BindBean Produit produit);
 
-    @SqlUpdate("UPDATE Produit SET quantite = :quantite, prix_unitaire = :prix_unitaire WHERE ID_produit = :ID_produit")
+    @SqlUpdate("UPDATE Produit SET prix_unitaire = :prix_unitaire WHERE ID_produit = :ID_produit")
     void update(@BindBean Produit produit);
 
     @SqlUpdate("DELETE FROM Produit WHERE ID_produit = :ID_produit")
@@ -33,10 +33,4 @@ public interface ProduitDao {
     @SqlQuery("SELECT p.* FROM Produit p JOIN Commande c ON p.ID_produit = c.ID_produit WHERE c.ID_commande = :ID_commande")
     @RegisterBeanMapper(Produit.class)
     Produit getProduitFromCommande(@Bind("ID_commande") String ID_commande);
-
-    @SqlUpdate("UPDATE Produit SET quantite = quantite + :quantite WHERE ID_produit = :ID_produit")
-    void ajouterQuantite(@Bind("ID_produit") String ID_produit, @Bind("quantite") int quantite);
-
-    @SqlUpdate("UPDATE Produit SET quantite = quantite - :quantite WHERE ID_produit = :ID_produit")
-    void retirerQuantite(@Bind("ID_produit") String ID_produit, @Bind("quantite") int quantite);
 }

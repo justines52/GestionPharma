@@ -7,7 +7,7 @@ public class Contenu {
 
     public Contenu() {}
     public Contenu(Lot lot, Produit produit) {
-        this.ID_Lot = lot.getID_Lot();
+        this.ID_Lot = lot.getID_lot();
         this.ID_Produit = produit.getID_produit();
     }
 
