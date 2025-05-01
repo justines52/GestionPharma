@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.PasswordField?>
+<AnchorPane fx:id="anchorPanePrincipal" prefHeight="659.0" prefWidth="1030.0" stylesheets="@../styles/LoginScreen.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestpharma.gestpharma.controller.LoginPageController">
+    <children>
+        <HBox fx:id="hbox" alignment="CENTER" spacing="20.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+
+            <!-- Zone Gauche : Affichage des Images et Étiquettes -->
+            <VBox fx:id="vboxgauche" alignment="TOP_CENTER" prefHeight="608.0" prefWidth="405.0">
+                <children>
+                    <ImageView fx:id="pharmacie" fitHeight="150.0" fitWidth="200.0" preserveRatio="true">
+                        <image>
+                            <Image url="@../images/pharma1.png" />
+                        </image>
+                    </ImageView>
+                    <VBox fx:id="vboxgaucheInterne" alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0">
+                        <children>
+                            <Label fx:id="connextezVousLabel" styleClass="bold" text="Connectez-Vous">
+                                <font>
+                                    <Font name="System Bold" size="27.0" />
+                                </font>
+                            </Label>
+                            <Label fx:id="aLaPharmacieLabel" styleClass="bold" text="à la pharmacie du service">
+                                <font>
+                                    <Font size="22.0" />
+                                </font>
+                            </Label>
+                            <Label fx:id="contactezVotreAdminLabel" maxWidth="300.0" text="Si vous n'avez pas de compte, contactez votre administrateur" wrapText="true">
+                                <font>
+                                    <Font size="13.0" />
+                                </font></Label>
+                        </children>
+                    </VBox>
+                    <HBox fx:id="hboxFarkh" prefHeight="100.0" prefWidth="200.0">
+                        <children>
+                            <AnchorPane fx:id="anchorFarkh" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                <children>
+                                    <ImageView fx:id="elFarkh" fitHeight="160.0" fitWidth="160.0" preserveRatio="true" AnchorPane.rightAnchor="10.0">
+                                        <image>
+                                            <Image url="@../images/Medecin.png" />
+                                        </image>
+                                    </ImageView>
+                                </children>
+                            </AnchorPane>
+                        </children>
+                    </HBox>
+                </children>
+            </VBox>
+
+            <!-- Formulaire de Connexion (Centré dans son Conteneur) -->
+            <AnchorPane fx:id="parentConnexionPane" prefHeight="625.0" prefWidth="625.0">
+                <children>
+                    <VBox fx:id="vboxConnexion" alignment="CENTER" prefHeight="367.0" prefWidth="384.0" spacing="20.0" style="-fx-background-color: #FFFFFF;" styleClass="vbox-padded">
+                        <padding>
+                            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                        </padding>
+                        <children>
+                            <HBox fx:id="seConnecterHbox" styleClass="backgroundinvisible">
+                                <children>
+                                    <!-- Titre -->
+                                    <Label fx:id="seConnecterLabel" alignment="CENTER_LEFT" text="Se Connecter">
+                                        <font>
+                                            <Font name="System Bold" size="24.0" />
+                                        </font>
+                                        <styleClass>
+                                            <String fx:value="backgroundinvisible" />
+                                            <String fx:value="bold" />
+                                        </styleClass>
+                                    </Label>
+                                </children>
+                            </HBox>
+
+                            <!-- Champs d'identifiant -->
+                            <TextField fx:id="UsernameTextField" promptText="Entrez le nom d'utilisateur" />
+
+                            <!-- Champs de mot de passe -->
+                            <PasswordField fx:id="PasswordTextField" promptText="Mot de passe" />
+
+                            <!-- Conteneur pour le Label (à gauche) et le Hyperlink (à droite) -->
+                            <HBox fx:id="mdpoubliéHbox" alignment="CENTER_LEFT" spacing="20.0" styleClass="backgroundinvisible">
+                                <children>
+                                    <Region styleClass="backgroundinvisible" HBox.hgrow="ALWAYS" />
+
+                                    <!-- Hyperlink aligné à droite -->
+                                    <Hyperlink fx:id="mdpOublieHyperlink" alignment="CENTER_RIGHT" styleClass="backgroundinvisible" text="Mot de passe oublié ?" />
+                                </children>
+                            </HBox>
+
+                            <!-- Bouton de Connexion -->
+                            <Button fx:id="connexionButton" text="Se Connecter">
+                                <font>
+                                    <Font name="System Bold" size="18.0" />
+                                </font>
+                            </Button>
+                        </children>
+                    </VBox>
+                </children>
+            </AnchorPane>
+
+        </HBox>
+    </children>
+</AnchorPane>

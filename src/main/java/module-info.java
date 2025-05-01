@@ -17,4 +17,7 @@ module gestpharma.gestpharma {
 
     opens gestpharma.gestpharma to javafx.fxml;
     exports gestpharma.gestpharma;
+
+    exports gestpharma.gestpharma.controller; // Exporter le package
+    opens gestpharma.gestpharma.controller to javafx.fxml; // Ouvrir le package pour FXMLLoader
 }

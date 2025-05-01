@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../Fonts/Poppins/Poppins-Regular.ttf');
+}
+@font-face {
+    font-family:'PoppinsBold' ;
+    src: url('../Fonts/Poppins/Poppins-Bold.ttf');
+}
+
+
+*{
+    -fx-font-family: "Poppins";
+    -fx-background-color: #DBECF0;
+}
+.bold{
+    -fx-font-family: 'PoppinsBold';
+    -fx-font-weight: bold;
+}
+
+#connexionButton{
+    -fx-background-color: #3A7B8C;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+}
+.hyperlink{
+    -fx-text-fill:  #858282;
+    -fx-underline: false;
+
+}
+.hyperlink:hover{
+    -fx-underline: true;
+}
+#vboxConnexion{
+    -fx-background-radius: 15;
+}
+.backgroundinvisible{
+    -fx-background-color: transparent;
+}
+.vbox-padded {
+    -fx-padding: 20; /* Padding autour des composants internes */
+    -fx-spacing: 20; /* Espacement vertical entre les enfants */
+}
+/* Définir la police Poppins régulière (par défaut pour tous) */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../Fonts/Poppins-Regular.ttf');
+}
+
+/* Définir la police Poppins en gras */
+@font-face {
+    font-family: 'PoppinsBold';
+    src: url('../Fonts/Poppins-Bold.ttf');
+}
+
+/* Appliquer la police régulière globalement */
+* {
+    -fx-font-family: 'Poppins';
+    -fx-background-color: #DBECF0; /* Couleur de fond */
+}
+
+/* Style pour les textes en gras */
+.bold {
+    -fx-font-family: 'PoppinsBold';
+    -fx-font-size: 18px; /* Taille de texte en gras */
+}
+
+/* Style du bouton de connexion */
+#connexionButton {
+    -fx-font-family: 'Poppins'; /* Utilisation de la police régulière */
+    -fx-font-size: 14px;
+    -fx-background-color: #3A7B8C;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+}
+
+/* Style pour les liens */
+.hyperlink {
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: #858282;
+    -fx-underline: false;
+}
+
+.hyperlink:hover {
+    -fx-underline: true;
+}
+
+/* Style personnalisé pour l'arrière-plan transparent */
+.backgroundinvisible {
+    -fx-background-color: transparent;
+}
+
+/* Style des VBox avec espacement */
+.vbox-padded {
+    -fx-padding: 20; /* Padding intérieur */
+    -fx-spacing: 20; /* Espacement vertical */
+}
