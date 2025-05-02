@@ -26,7 +26,6 @@ public class PrescriptionController {
         menuStates.put(transactionsMenu, false);
 
         // Masquer tous les sous-menus dès le départ
-        hideMenu(gestionMedicaleMenu);
         hideMenu(stockMenu);
         hideMenu(transactionsMenu);
     }

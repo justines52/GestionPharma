@@ -2,34 +2,48 @@
     font-family: 'Poppins';
     src: url("../Fonts/Poppins/Poppins-Regular.ttf");
 }
-@font-face {
-    font-family: 'Poppins';
-    src: url("../Fonts.Poppins/Poppins-Bold.ttf");
-}
 *{
     font-family: Poppins;
 }
 .textfield{
     -fx-background-color: transparent;
-    -fx-font-size: 16px;
+    -fx-font-size: 18px;
     -fx-font-weight: bold;
 
 }
 .searchbar{
     -fx-background-color: transparent;
     -fx-prompt-text-fill: #8C8C8C;
+    -fx-font-size: 15px;
 
-    -fx-border-color: transparent transparent #000000 transparent; /* Bordure inférieure noire */
+    -fx-border-color: transparent transparent #333333 transparent; /* Bordure inférieure noire */
     -fx-border-width: 0 0 2px 0; /* Épaisseur de la bordure inférieure */
+}
+#searchIcon{
+    fx-fill: #333333;
 }
 .sidebarBtn{
     -fx-alignment: center-left; /* Aligne le texte à gauche horizontalement tout en le gardant centré verticalement */
     -fx-padding: 0 15px 0 15px; /* Ajuste l'espacement intérieur du bouton (gauche, haut, droite, bas) */
+    -fx-background-radius: 0 ;
+    -fx-text-fill: #333333;
+    -fx-font-size: 15px;
 
+
+}
+.sidebarBtn FontIcon{
+    -fx-fill: #333333;
 }
 .sidebarUnderBtn{
     -fx-alignment: center-left; /* Aligne le texte à gauche horizontalement tout en le gardant centré verticalement */
     -fx-padding: 0 15px 0 15px; /* Ajuste l'espacement intérieur du bouton (gauche, haut, droite, bas) */
+    -fx-text-fill: #333333;
+    -fx-font-size: 15px;
+
+
+}
+.sidebarUnderBtn FontIcon{
+    -fx-fill: #333333;
 }
 .sidebarUnderBtn:hover{
     -fx-text-fill: #3A7B8C;
@@ -37,12 +51,16 @@
 .sidebarUnderBtn:hover FontIcon{
     -fx-fill: #3A7B8C;
 }
-.sidebarUnderBtn:selected FontIcon{
+.sidebarUnderBtn-selected FontIcon{
     -fx-fill: #3A7B8C;
 }
-.sidebarUnderBtn:selected{
+.sidebarUnderBtn-selected{
+    -fx-alignment: center-left; /* Aligne le texte à gauche horizontalement tout en le gardant centré verticalement */
+    -fx-padding: 0 15px 0 15px; /* Ajuste l'espacement intérieur du bouton (gauche, haut, droite, bas) */
     -fx-fill: #3A7B8C;
     -fx-text-fill: #3A7B8C;
+    -fx-font-size: 15px;
+
 }
 .sidebarBtn:hover{
     -fx-background-color: #3A7B8C;
@@ -52,28 +70,52 @@
 .sidebarBtn:hover FontIcon{
   -fx-fill: white;
 }
-.sidebarBtn:selected{
+.sidebarBtn-selected{
+    -fx-alignment: center-left; /* Aligne le texte à gauche horizontalement tout en le gardant centré verticalement */
+    -fx-padding: 0 15px 0 15px; /* Ajuste l'espacement intérieur du bouton (gauche, haut, droite, bas) */
+    -fx-background-radius: 0 ;
     -fx-background-color: #3A7B8C;
     -fx-text-fill: white;
+    -fx-font-size: 15px;
+
 }
-.sidebarBtn:selected FontIcon{
+.sidebarBtn-selected FontIcon{
     -fx-fill: white;
 }
 /* TABLEVIEW GLOBAL */
 .table-view {
     -fx-background-color: transparent;
     -fx-control-inner-background: transparent;
+    -fx-background-radius: 15px;
 }
+
+.table-view .column-header {
+    -fx-background-color: transparent; /* Pas de couleur ou d'effet spécifique */
+    -fx-background-radius: 0; /* Pas d'arrondi à ce niveau */
+    -fx-border-radius: 0;
+}
+
+
 /* pour enlver l'espace entre les column du tableview */
 .table-view .column-header-background ,.table-view .column-header{
     -fx-padding: 0;
-    -fx-border-insets: 0;
-    -fx-background-insets: 0;
+    -fx-border-insets: 1;
+    -fx-background-insets: 1;
+}
+.table-view .column-header-background ,.table-view .column-header{
+    -fx-padding: 5; /* Ajoute un espace autour du conteneur */
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-background-color: #FFFFFF;
+
+    -fx-min-height: 47px; /* Fixe une hauteur minimale */
+
+
 }
 .table-view .column-header .label {
     -fx-text-fill: #8c8c8c;
     -fx-background-color: white;
-    -fx-font-size: 13px;
+    -fx-font-size: 15px;
     -fx-font-weight: bold;
     -fx-alignment: CENTER;
 }
@@ -96,6 +138,8 @@
     -fx-background-color: #3A7B8C ;
     -fx-text-fill: white ;
     -fx-effect: dropshadow(gaussian, rgba(43, 122, 139, 0.3), 20, 0.3, 0, 0);
+    -fx-border-radius: 15px ;
+    -fx-background-radius: 8;
 
 }
 .buttonN{
@@ -115,3 +159,16 @@
 .labelVert{
     -fx-text-fill: #3A7B8C;
 }
+.table-view #numBilColumn .label {
+    -fx-text-fill: #3A7B8C;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+}
+.table-view #numBilColumn .table-cell {
+    -fx-text-fill: #3A7B8C; /* Texte bleu */
+    -fx-font-size: 17px; /* Police de 15px */
+    -fx-font-weight: bold; /* Texte en gras */
+    -fx-alignment: CENTER; /* Contenu centré */
+}
+
