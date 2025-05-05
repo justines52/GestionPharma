@@ -76,7 +76,7 @@
     -fx-background-radius: 0 ;
     -fx-background-color: #3A7B8C;
     -fx-text-fill: white;
-    -fx-font-size: 15px;
+    -fx-font-size: 17px;
 
 }
 .sidebarBtn-selected FontIcon{
@@ -118,12 +118,37 @@
     -fx-font-size: 15px;
     -fx-font-weight: bold;
     -fx-alignment: CENTER;
+    -fx-text-alignment: CENTER;
 }
 
 /* LIGNES */
 .table-view .table-row-cell {
     -fx-background-color: transparent;
     -fx-border-color: transparent;
+    -fx-alignment: CENTER ;
+    -fx-border-color: transparent;
+    -fx-padding: 10 0 0 0;
+    -fx-font-size: 19px;
+    -fx-font-weight: bold;
+    -fx-min-height: 40px;
+}
+.table-view .table-row-cell * {
+    -fx-alignment: CENTER ;
+    -fx-text-alignment: CENTER;
+    -fx-font-size: 19px;
+    -fx-font-weight: bold;
+}
+#dosageColumn .column-header{
+    -fx-padding: 0 70 0 0;
+}
+#voieColumn .column-header{
+    -fx-padding: 0 100 0 0;
+}
+#formeColumn .column-header{
+    -fx-padding: 0 100 0 0;
+}
+#actionsColumn .column-header{
+    -fx-padding: 0 100 0 0;
 }
 .table-view .table-row-cell:selected {
     -fx-background-color: #dceff3;
@@ -137,18 +162,25 @@
 #deconnexionBtn{
     -fx-background-color: #3A7B8C ;
     -fx-text-fill: white ;
+    -fx-font-weight: bold;
     -fx-effect: dropshadow(gaussian, rgba(43, 122, 139, 0.3), 20, 0.3, 0, 0);
     -fx-border-radius: 15px ;
     -fx-background-radius: 8;
 
+}
+#deconnexionBtn:hover{
+    -fx-effect: dropshadow(gaussian, rgba(43, 122, 139, 0.3), 30, 0.5, 0, 0);
 }
 .buttonN{
     -fx-background-color: white ;
     -fx-text-fill: #3A7B8C ;
     -fx-border-radius: 10px ;
     -fx-background-radius: 15 ;
+    -fx-border-width: 2px ;
+    -fx-border-color: #3A7B8C;
+}
+.buttonN:hover{
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 4);
-
 }
 .buttonN FontIcon{
     -fx-fill: #3A7B8C !important;
@@ -171,4 +203,21 @@
     -fx-font-weight: bold; /* Texte en gras */
     -fx-alignment: CENTER; /* Contenu centré */
 }
+.gestion-medicale-icon {
+    -fx-translate-x: 2; /* Déplacement horizontal (+ pour droite, - pour gauche) */
+    -fx-translate-y: 0; /* Déplacement vertical (+ pour bas, - pour haut) */
+}
+.prescriptions-icon {
+    -fx-translate-x: 4; /* Déplacement horizontal (+ pour droite, - pour gauche) */
+    -fx-translate-y: 0; /* Déplacement vertical (+ pour bas, - pour haut) */
+}
+.medecins-icon {
+    -fx-translate-x: 3; /* Déplacement horizontal (+ pour droite, - pour gauche) */
+    -fx-translate-y: 0; /* Déplacement vertical (+ pour bas, - pour haut) */
+}
+.stock-icon {
+        -fx-translate-x: -2; /* Déplacement horizontal (+ pour droite, - pour gauche) */
+        -fx-translate-y: 0; /* Déplacement vertical (+ pour bas, - pour haut) */
+    }
+
 

@@ -46,7 +46,7 @@
                   <FontIcon iconLiteral="fas-search" iconSize="20" wrappingWidth="31.0" />
                </children>
             </HBox>
-            <JFXButton fx:id="filtreBtn" graphicTextGap="10.0" layoutX="648.0" layoutY="145.0" prefHeight="40.0" prefWidth="127.0" styleClass="buttonN" text="Filtre" AnchorPane.rightAnchor="340.0">
+            <JFXButton fx:id="filtreBtn" graphicTextGap="10.0" layoutX="648.0" layoutY="145.0" prefHeight="40.0" prefWidth="127.0" styleClass="buttonN" text="Filtre" AnchorPane.rightAnchor="340.0" AnchorPane.topAnchor="148.0">
                <font>
                   <Font size="18.0" />
                </font>
@@ -110,8 +110,14 @@
                <children>
                   <JFXButton fx:id="gestionMedicaleBtn" graphicTextGap="20.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" onAction="#onMenu1ButtonClicked" styleClass="sidebarBtn-selected" text="Gestion Médicale">
                      <graphic>
-                        <FontIcon iconLiteral="fas-plus" iconSize="20" />
+                        <FontIcon iconLiteral="fas-plus" iconSize="20" selectionEnd="1" selectionStart="1" strokeWidth="0.0" styleClass="gestion-medicale-icon" wrappingWidth="17.5" />
                      </graphic>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
                   </JFXButton>
                   <VBox fx:id="gestionMedicaleMenu" managed="true" prefWidth="100.0" visible="true" VBox.vgrow="NEVER">
                      <padding>
@@ -125,12 +131,12 @@
                         </JFXButton>
                         <JFXButton fx:id="prescriptionsBtn" graphicTextGap="25.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" styleClass="sidebarUnderBtn-selected" text="Préscriptions">
                            <graphic>
-                              <FontIcon iconLiteral="fas-file-medical" iconSize="20" />
+                              <FontIcon iconLiteral="fas-file-medical" iconSize="20" styleClass="prescriptions-icon" />
                            </graphic>
                         </JFXButton>
                         <JFXButton fx:id="medecinBtn" graphicTextGap="22.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" styleClass="sidebarUnderBtn" text="Médecins">
                            <graphic>
-                              <FontIcon iconLiteral="fas-user-md" iconSize="20" />
+                              <FontIcon iconLiteral="fas-user-md" iconSize="20" styleClass="medecins-icon" />
                            </graphic>
                         </JFXButton>
                      </children>
@@ -141,7 +147,7 @@
                <children>
                   <JFXButton fx:id="stockBtn" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" onAction="#onMenu2ButtonClicked" styleClass="sidebarBtn" text="Stock">
                      <graphic>
-                        <FontIcon iconLiteral="fas-box-open" iconSize="20" />
+                        <FontIcon iconLiteral="fas-box-open" iconSize="20" styleClass="stock-icon" />
                      </graphic>
                   </JFXButton>
                   <VBox fx:id="stockMenu" managed="false" visible="false" VBox.vgrow="NEVER">
