@@ -68,7 +68,7 @@
 
 }
 .sidebarBtn:hover FontIcon{
-  -fx-fill: white;
+    -fx-fill: white;
 }
 .sidebarBtn-selected{
     -fx-alignment: center-left; /* Aligne le texte à gauche horizontalement tout en le gardant centré verticalement */
@@ -191,13 +191,13 @@
 .labelVert{
     -fx-text-fill: #3A7B8C;
 }
-.table-view #numBilColumn .label {
+.table-view #numLotColumn .label {
     -fx-text-fill: #3A7B8C;
     -fx-font-size: 17px;
     -fx-font-weight: bold;
     -fx-alignment: CENTER;
 }
-.table-view #numBilColumn .table-cell {
+.table-view #numLotColumn .table-cell {
     -fx-text-fill: #3A7B8C; /* Texte bleu */
     -fx-font-size: 17px; /* Police de 15px */
     -fx-font-weight: bold; /* Texte en gras */
@@ -216,8 +216,6 @@
     -fx-translate-y: 0; /* Déplacement vertical (+ pour bas, - pour haut) */
 }
 .stock-icon {
-        -fx-translate-x: -2; /* Déplacement horizontal (+ pour droite, - pour gauche) */
-        -fx-translate-y: 0; /* Déplacement vertical (+ pour bas, - pour haut) */
-    }
-
-
+    -fx-translate-x: -2; /* Déplacement horizontal (+ pour droite, - pour gauche) */
+    -fx-translate-y: 0; /* Déplacement vertical (+ pour bas, - pour haut) */
+}
