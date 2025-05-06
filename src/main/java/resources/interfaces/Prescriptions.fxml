@@ -39,7 +39,7 @@
                </children>
             </VBox>
             <Label layoutX="763.0" layoutY="67.0" styleClass="labelVert" text="Nombre total de Préscriptions" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="30.0" />
-            <TextField fx:id="nbrTotalEntree" alignment="CENTER_RIGHT" layoutX="773.0" layoutY="47.0" styleClass="textfield" AnchorPane.rightAnchor="100.0" />
+            <TextField fx:id="nbrTotalPrescriptions" alignment="CENTER_RIGHT" layoutX="773.0" layoutY="47.0" styleClass="textfield" AnchorPane.rightAnchor="100.0" />
             <HBox layoutX="732.0" layoutY="153.0" AnchorPane.rightAnchor="100.0">
                <children>
                   <TextField fx:id="searchBarBtn" prefHeight="27.0" prefWidth="189.0" promptText="Recherche..." styleClass="searchbar" />
@@ -59,7 +59,7 @@
                   <TableView fx:id="prescriptionsTable" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <columns>
                         <TableColumn fx:id="numBilColumn" prefWidth="75.0" text="N°BIL" />
-                        <TableColumn fx:id="datePrescriptionsBtn" prefWidth="75.0" text="Date Préscriptions" />
+                        <TableColumn fx:id="datePrescriptionsColumn" prefWidth="75.0" text="Date Préscriptions" />
                         <TableColumn fx:id="dateDeSortieColumn" prefWidth="75.0" text="Date de sortie" />
                         <TableColumn fx:id="medicamentColumn" prefWidth="75.0" text="Médicament" />
                         <TableColumn fx:id="dosageColumn" prefWidth="75.0" text="Dosage" />
