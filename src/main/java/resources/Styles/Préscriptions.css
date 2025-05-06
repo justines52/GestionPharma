@@ -1,6 +1,12 @@
 @font-face {
     font-family: 'Poppins';
     src: url("../Fonts/Poppins/Poppins-Regular.ttf");
+    font-weight:normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url("../Fonts/Poppins/Poppins-Bold.ttf");
+    font-weight:bold;
 }
 *{
     font-family: Poppins;
@@ -27,7 +33,9 @@
     -fx-padding: 0 15px 0 15px; /* Ajuste l'espacement intérieur du bouton (gauche, haut, droite, bas) */
     -fx-background-radius: 0 ;
     -fx-text-fill: #333333;
-    -fx-font-size: 15px;
+    -fx-font-size: 22px;
+    -fx-font-weight: normal;
+
 
 
 }
@@ -38,7 +46,9 @@
     -fx-alignment: center-left; /* Aligne le texte à gauche horizontalement tout en le gardant centré verticalement */
     -fx-padding: 0 15px 0 15px; /* Ajuste l'espacement intérieur du bouton (gauche, haut, droite, bas) */
     -fx-text-fill: #333333;
-    -fx-font-size: 15px;
+    -fx-font-size: 22px;
+    -fx-font-weight: normal;
+
 
 
 }
@@ -59,7 +69,7 @@
     -fx-padding: 0 15px 0 15px; /* Ajuste l'espacement intérieur du bouton (gauche, haut, droite, bas) */
     -fx-fill: #3A7B8C;
     -fx-text-fill: #3A7B8C;
-    -fx-font-size: 15px;
+    -fx-font-size: 22px;
 
 }
 .sidebarBtn:hover{
@@ -219,5 +229,28 @@
         -fx-translate-x: -2; /* Déplacement horizontal (+ pour droite, - pour gauche) */
         -fx-translate-y: 0; /* Déplacement vertical (+ pour bas, - pour haut) */
     }
+.edit-button{
+    -fx-background-color: white ;
+    -fx-text-fill:  #3A7B8C !important;
+    -fx-font-weight: bold;
+    -fx-border-radius: 15px ;
+    -fx-background-radius: 15px;
+
+}
+.delete-button{
+    -fx-background-color: white ;
+    -fx-text-fill:  #3A7B8C !important;
+    -fx-font-weight: bold;
+    -fx-border-radius: 15px ;
+    -fx-background-radius: 15px;
+
+}
+.hbox-button{
+    -fx-text-fill:  #3A7B8C;
+    -fx-font-weight: bold;
+    -fx-border-radius: 15px ;
+    -fx-background-radius: 15px;
+    -fx-alignment: CENTER ;
+}
 
 

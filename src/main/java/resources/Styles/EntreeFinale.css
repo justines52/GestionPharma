@@ -1,6 +1,13 @@
 @font-face {
     font-family: 'Poppins';
     src: url("../Fonts/Poppins/Poppins-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("../Fonts/Poppins/Poppins-Bold.ttf");
+    font-weight: bold;
 }
 *{
     font-family: Poppins;
@@ -27,7 +34,9 @@
     -fx-padding: 0 15px 0 15px; /* Ajuste l'espacement intérieur du bouton (gauche, haut, droite, bas) */
     -fx-background-radius: 0 ;
     -fx-text-fill: #333333;
-    -fx-font-size: 15px;
+    -fx-font-size: 22px;
+    -fx-font-weight: normal;
+
 
 
 }
@@ -38,7 +47,8 @@
     -fx-alignment: center-left; /* Aligne le texte à gauche horizontalement tout en le gardant centré verticalement */
     -fx-padding: 0 15px 0 15px; /* Ajuste l'espacement intérieur du bouton (gauche, haut, droite, bas) */
     -fx-text-fill: #333333;
-    -fx-font-size: 15px;
+    -fx-font-size: 22px;
+    -fx-font-weight: normal;
 
 
 }
@@ -59,7 +69,7 @@
     -fx-padding: 0 15px 0 15px; /* Ajuste l'espacement intérieur du bouton (gauche, haut, droite, bas) */
     -fx-fill: #3A7B8C;
     -fx-text-fill: #3A7B8C;
-    -fx-font-size: 15px;
+    -fx-font-size: 22px;
 
 }
 .sidebarBtn:hover{
@@ -76,7 +86,7 @@
     -fx-background-radius: 0 ;
     -fx-background-color: #3A7B8C;
     -fx-text-fill: white;
-    -fx-font-size: 17px;
+    -fx-font-size: 22px;
 
 }
 .sidebarBtn-selected FontIcon{
@@ -137,6 +147,7 @@
     -fx-text-alignment: CENTER;
     -fx-font-size: 19px;
     -fx-font-weight: bold;
+    -fx-min-height: 40px;
 }
 #dosageColumn .column-header{
     -fx-padding: 0 70 0 0;
@@ -191,6 +202,10 @@
 .labelVert{
     -fx-text-fill: #3A7B8C;
 }
+.labelbold{
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
 .table-view #numLotColumn .label {
     -fx-text-fill: #3A7B8C;
     -fx-font-size: 17px;
@@ -218,4 +233,12 @@
 .stock-icon {
     -fx-translate-x: -2; /* Déplacement horizontal (+ pour droite, - pour gauche) */
     -fx-translate-y: 0; /* Déplacement vertical (+ pour bas, - pour haut) */
+}
+.detailsBtn{
+    -fx-background-color: white ;
+    -fx-text-fill:  #3A7B8C;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(43, 122, 139, 0.3), 20, 0.3, 0, 0);
+    -fx-border-radius: 15px ;
+    -fx-background-radius: 15px;
 }

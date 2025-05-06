@@ -1,10 +1,26 @@
 package Controller;
 
 import javafx.animation.FadeTransition;
+import javafx.event.ActionEvent;
+import javafx.scene.effect.BlurType;
+import javafx.scene.effect.DropShadow;
+import javafx.scene.layout.StackPane;
+import javafx.scene.paint.Color;
+
+
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.layout.VBox;
 import javafx.util.Duration;
+
+import java.io.IOException;
 import java.util.HashMap;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class EntreeController {
 
@@ -14,6 +30,8 @@ public class EntreeController {
     private VBox stockMenu;
     @FXML
     private VBox transactionsMenu;
+    @FXML
+    private StackPane rootStackPane;
 
     // Stockage des états des sous-menus (ouvert/fermé)
     private final HashMap<VBox, Boolean> menuStates = new HashMap<>();
@@ -30,6 +48,55 @@ public class EntreeController {
         hideMenu(stockMenu);
     }
 
+    public void handleAjouterEntree(ActionEvent event) {
+        try {
+            // Charger le fichier FXML
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/interfaces/AjouterEntree.fxml"));
+            Parent ajouterEntreeView = loader.load();
+
+            // Créer un nouveau Stage pour la vue secondaire
+            Stage secondaryStage = new Stage();
+
+            // Créer une nouvelle Scene pour la fenêtre indépendante
+            Scene scene = new Scene(ajouterEntreeView);
+            secondaryStage.setScene(scene);
+
+            // Configurer la fenêtre (facultatif)
+            secondaryStage.setTitle("Ajouter Entrée");
+            secondaryStage.initModality(Modality.WINDOW_MODAL); // Fenêtre modale
+            secondaryStage.initOwner(rootStackPane.getScene().getWindow()); // Définir la fenêtre parent (principal)
+
+            // Appliquer l'effet DropShadow au rootStackPane (pas à la vue secondaire)
+            DropShadow dropShadow = new DropShadow();
+            dropShadow.setColor(Color.rgb(58, 123, 140));
+
+            dropShadow.setRadius(80);  // 80 pixels
+            dropShadow.setSpread(0.8); // 0.8 = 80% spread
+            dropShadow.setOffsetX(0);  // X offset
+            dropShadow.setOffsetY(0);  // Y offset
+            dropShadow.setBlurType(BlurType.GAUSSIAN);
+            rootStackPane.setEffect(dropShadow); // Ajoute une ombre à la fenêtre principale
+
+            // Afficher la fenêtre secondaire
+            secondaryStage.show();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    @FXML
+    public void closeSecondaryView() {
+        // Vérification qu'un composant secondaire est présent
+        if (rootStackPane.getChildren().size() > 1) {
+            // Supprimer le dernier enfant ajouté
+            Node lastNode = rootStackPane.getChildren().get(rootStackPane.getChildren().size() - 1);
+            rootStackPane.getChildren().remove(lastNode);
+
+
+        } else {
+            System.out.println("Aucune vue secondaire à fermer.");
+        }
+    }
     /**
      * Gère l'affichage/masquage d'un sous-menu.
      *

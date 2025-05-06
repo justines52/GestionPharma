@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="854.0" prefWidth="787.0" stylesheets="@../Styles/AjouterEntree.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="344.0" layoutY="327.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <HBox prefHeight="134.0" prefWidth="687.0" spacing="20.0">
+               <children>
+                  <VBox prefHeight="103.0" prefWidth="329.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" styleClass="labelAjouter" text="Ajouter une Entrée" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font size="45.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label styleClass="labelP" text="Date d'entrée" />
+                        <DatePicker maxWidth="1.7976931348623157E308" prefHeight="64.0" styleClass="DatePicker">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </DatePicker>
+                     </children>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="605.0" prefWidth="687.0" spacing="39.0" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <VBox prefWidth="325.0" spacing="15.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label styleClass="labelP" text="N° Lot">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="numLotTextField" prefHeight="64.0" prefWidth="320.0" styleClass="textField" />
+                        <Label styleClass="labelP" text="Médicament" />
+                        <JFXComboBox fx:id="medicamentComboBox" maxWidth="1.7976931348623157E308" prefHeight="64.0" prefWidth="305.0" styleClass="ComboBox" />
+                        <Label styleClass="labelP" text="Sous-classe" />
+                        <JFXComboBox fx:id="sousClasseComboBox" maxWidth="1.7976931348623157E308" prefHeight="64.0" prefWidth="305.0" styleClass="ComboBox" />
+                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="29.0">
+                           <children>
+                              <VBox prefHeight="100.0" prefWidth="135.0" spacing="15.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label styleClass="labelP" text="Dosage" />
+                                    <JFXComboBox fx:id="dosageComboBox" maxWidth="1.7976931348623157E308" prefHeight="64.0" prefWidth="135.0" styleClass="ComboBox" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="135.0" spacing="15.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label styleClass="labelP" text="Forme" />
+                                    <JFXComboBox fx:id="formeComboBox" maxWidth="1.7976931348623157E308" prefHeight="64.0" prefWidth="135.0" styleClass="ComboBox" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Label styleClass="labelP" text="Date de fabrication" />
+                        <DatePicker fx:id="dateFabrication" maxWidth="1.7976931348623157E308" prefHeight="64.0" prefWidth="305.0" styleClass="DatePicker" />
+                        <JFXCheckBox fx:id="pharmacieCentraleCheckBox" text="Pharmacie Centrale" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="325.0" spacing="15.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label styleClass="labelP" text="Quantité" />
+                        <TextField fx:id="quantiteTextField" prefHeight="64.0" styleClass="textField" />
+                        <Label styleClass="labelP" text="Catégorie" />
+                        <JFXComboBox fx:id="categorieComboBox" maxWidth="1.7976931348623157E308" prefHeight="64.0" prefWidth="305.0" styleClass="ComboBox" />
+                        <Label styleClass="labelP" text="Classe thérapeutique" />
+                        <JFXComboBox fx:id="classeTherapeutiqueComboBox" maxWidth="1.7976931348623157E308" prefHeight="64.0" prefWidth="305.0" styleClass="ComboBox" />
+                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="32.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label styleClass="labelP" text="Voie" />
+                                    <JFXComboBox fx:id="voieComboBox" maxWidth="1.7976931348623157E308" prefHeight="64.0" prefWidth="135.0" styleClass="ComboBox" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label styleClass="labelP" text="Prix unitaire" />
+                                    <TextField fx:id="prixUnitaireTextField" maxWidth="1.7976931348623157E308" prefHeight="64.0" styleClass="textField" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Label styleClass="labelP" text="Date d’éxpiration" />
+                        <DatePicker fx:id="dateExpiration" maxHeight="64.0" maxWidth="1.7976931348623157E308" prefHeight="64.0" prefWidth="305.0" styleClass="DatePicker" VBox.vgrow="ALWAYS" />
+                        <JFXCheckBox fx:id="autreCheckbox" text="Autre" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="107.0" prefWidth="727.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <JFXButton fx:id="ajouterBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="64.0" prefWidth="702.0" styleClass="ajouterEntreeBtn" text="Ajouter" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets top="26.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
