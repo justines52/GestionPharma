@@ -22,6 +22,12 @@
     -fx-font-weight: bold;
     -fx-text-fill: #3A7B8C;
 }
+.labelGrand30{
+    -fx-font-size: 30px;
+    -fx-font-family: "DM Sans";
+    -fx-font-weight: bold;
+    -fx-text-fill: #3A7B8C;
+}
 .labelPetit{
     -fx-font-size: 17px;
     -fx-font-family: "DM Sans";

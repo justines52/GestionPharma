@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<!-- Mise en page principale avec un BorderPane -->
+
+<StackPane fx:id="rootStackPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EntreeController">
+    <children>
+        <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="916.0" prefWidth="1200.0" stylesheets="@../Styles/EntreeFinale.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+
+            <!-- Section centrale -->
+            <center>
+                <AnchorPane fx:id="anchorPane" prefHeight="917.0" prefWidth="901.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <VBox layoutX="104.0" layoutY="-21.0" prefHeight="107.0" prefWidth="436.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="30.0">
+                            <children>
+                                <Label styleClass="labelbold" text="Stock">
+                                    <font>
+                                        <Font name="System Bold" size="36.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Gérez les sorties de stock.">
+                                    <font>
+                                        <Font size="13.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                        <Label layoutX="763.0" layoutY="67.0" styleClass="labelVert" text="Nombre total de Sorties" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="30.0" />
+                        <TextField fx:id="nbrTotalSortie" alignment="CENTER_RIGHT" layoutX="773.0" layoutY="47.0" styleClass="textfield" AnchorPane.rightAnchor="100.0" />
+                        <HBox layoutX="732.0" layoutY="153.0" prefHeight="33.0" prefWidth="243.0" AnchorPane.rightAnchor="77.0">
+                            <children>
+                                <TextField fx:id="searchBarBtn" prefHeight="27.0" prefWidth="189.0" promptText="Recherche..." styleClass="searchbar" HBox.hgrow="ALWAYS" />
+                                <FontIcon iconLiteral="fas-search" iconSize="20" wrappingWidth="31.0" />
+                            </children>
+                        </HBox>
+                        <JFXButton fx:id="filtreBtn" graphicTextGap="10.0" layoutX="648.0" layoutY="145.0" prefHeight="40.0" prefWidth="154.0" styleClass="buttonN" text="Filtre" AnchorPane.rightAnchor="340.0" AnchorPane.topAnchor="148.0">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <graphic>
+                                <FontIcon iconLiteral="fas-sliders-h" iconSize="20" />
+                            </graphic>
+                        </JFXButton>
+                        <AnchorPane layoutX="373.0" layoutY="335.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="220.0">
+                            <children>
+                                <TableView fx:id="prescriptionsTable" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <columns>
+                                        <TableColumn fx:id="numLotColumn" prefWidth="75.0" text="N°LOT" />
+                                        <TableColumn fx:id="dateSortieColumn" prefWidth="75.0" text="Date Sortie" />
+                                        <TableColumn fx:id="medicamentColumn" prefWidth="75.0" text="Médicament" />
+                                        <TableColumn fx:id="dosageColumn" prefWidth="75.0" text="Dosage" />
+                                        <TableColumn fx:id="formeColumn" prefWidth="75.0" text="Forme" />
+                                        <TableColumn fx:id="quantiteColumn" prefWidth="75.0" text="Quantité" />
+                                        <TableColumn fx:id="PatientColumn" prefWidth="75.0" text="Patient" />
+                                        <TableColumn fx:id="medecinColumn" prefWidth="75.0" text="Medecin" />
+                                        <TableColumn fx:id="actionsColumn" prefWidth="75.0" text="Actions" />
+                                    </columns>
+                                    <columnResizePolicy>
+                                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                    </columnResizePolicy>
+                                </TableView>
+                            </children></AnchorPane>
+                        <JFXButton fx:id="ajouterEntreesBtn" graphicTextGap="10.0" layoutX="39.0" layoutY="153.0" onAction="#handleAjouterEntree" prefHeight="43.0" prefWidth="212.0" styleClass="buttonN" text="Ajouter Sortie" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="153.0">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <graphic>
+                                <FontIcon iconLiteral="fas-plus" iconSize="20" />
+                            </graphic>
+                        </JFXButton>
+                    </children></AnchorPane>
+            </center>
+            <left>
+                <VBox fx:id="sideBar" prefHeight="916.0" prefWidth="355.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <HBox alignment="CENTER_LEFT">
+                            <children>
+                                <ImageView fx:id="pharmacieLogo" fitHeight="72.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                                    <image>
+                                        <Image url="@../Images/pharma1.png" />
+                                    </image>
+                                </ImageView>
+                                <Label styleClass="labelbold" text="Pharmacie">
+                                    <font>
+                                        <Font name="System Bold" size="30.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                            <opaqueInsets>
+                                <Insets left="5.0" right="5.0" />
+                            </opaqueInsets>
+                            <VBox.margin>
+                                <Insets bottom="10.0" top="10.0" />
+                            </VBox.margin>
+                            <padding>
+                                <Insets left="56.0" />
+                            </padding>
+                        </HBox>
+                        <JFXButton fx:id="dashboardBtn" graphicTextGap="20.0" maxWidth="1.7976931348623157E308" minHeight="60.0" styleClass="sidebarBtn" text="Tableau de bord">
+                            <graphic>
+                                <FontIcon iconLiteral="fas-layer-group" iconSize="20" />
+                            </graphic>
+                        </JFXButton>
+                        <VBox>
+                            <children>
+                                <JFXButton fx:id="gestionMedicaleBtn" graphicTextGap="20.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" onAction="#onMenu1ButtonClicked" styleClass="sidebarBtn" text="Gestion Médicale">
+                                    <graphic>
+                                        <FontIcon iconLiteral="fas-plus" iconSize="20" selectionEnd="1" selectionStart="1" strokeWidth="0.0" styleClass="gestion-medicale-icon" wrappingWidth="17.5" />
+                                    </graphic>
+                                    <VBox.margin>
+                                        <Insets />
+                                    </VBox.margin>
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                </JFXButton>
+                                <VBox fx:id="gestionMedicaleMenu" managed="false" prefWidth="100.0" visible="false" VBox.vgrow="NEVER">
+                                    <padding>
+                                        <Insets left="51.0" />
+                                    </padding>
+                                    <children>
+                                        <JFXButton fx:id="patientsBtn" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" styleClass="sidebarUnderBtn" text="Patients">
+                                            <graphic>
+                                                <FontIcon iconLiteral="fas-users" iconSize="18" />
+                                            </graphic>
+                                        </JFXButton>
+                                        <JFXButton fx:id="prescriptionsBtn" graphicTextGap="25.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" styleClass="sidebarUnderBtn" text="Préscriptions">
+                                            <graphic>
+                                                <FontIcon iconLiteral="fas-file-medical" iconSize="20" styleClass="prescriptions-icon" />
+                                            </graphic>
+                                        </JFXButton>
+                                        <JFXButton fx:id="medecinBtn" graphicTextGap="22.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" styleClass="sidebarUnderBtn" text="Médecins">
+                                            <graphic>
+                                                <FontIcon iconLiteral="fas-user-md" iconSize="20" styleClass="medecins-icon" />
+                                            </graphic>
+                                        </JFXButton>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT">
+                            <children>
+                                <JFXButton fx:id="stockBtn" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" onAction="#onMenu2ButtonClicked" styleClass="sidebarBtn" text="Stock">
+                                    <graphic>
+                                        <FontIcon iconLiteral="fas-box-open" iconSize="20" styleClass="stock-icon" />
+                                    </graphic>
+                                </JFXButton>
+                                <VBox fx:id="stockMenu" managed="false" visible="false" VBox.vgrow="NEVER">
+                                    <children>
+                                        <JFXButton fx:id="listeDesProduitsBtn" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" styleClass="sidebarUnderBtn" text="Liste des Produits">
+                                            <graphic>
+                                                <FontIcon iconLiteral="fas-capsules" iconSize="20" />
+                                            </graphic>
+                                        </JFXButton>
+                                        <JFXButton fx:id="listeDesTypesBtn" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" styleClass="sidebarUnderBtn" text="Liste des Types">
+                                            <graphic>
+                                                <FontIcon iconLiteral="fas-list" iconSize="20" />
+                                            </graphic>
+                                        </JFXButton>
+                                    </children>
+                                    <padding>
+                                        <Insets left="51.0" />
+                                    </padding>
+                                </VBox>
+                            </children>
+                        </VBox>
+                        <VBox>
+                            <children>
+                                <JFXButton fx:id="transactionsBtn" graphicTextGap="20.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" onAction="#onMenu3ButtonClicked" styleClass="sidebarBtn-selected" text="Transactions">
+                                    <graphic>
+                                        <FontIcon iconLiteral="fas-exchange-alt" iconSize="20" styleClass="FontIcon" />
+                                    </graphic>
+                                </JFXButton>
+                                <VBox fx:id="transactionsMenu" managed="true" visible="true" VBox.vgrow="NEVER">
+                                    <children>
+                                        <JFXButton fx:id="entreeBtn" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" styleClass="sidebarUnderBtn" text="Entrées">
+                                            <graphic>
+                                                <FontIcon iconLiteral="fas-arrow-right" iconSize="20" />
+                                            </graphic>
+                                        </JFXButton>
+                                        <JFXButton fx:id="sortiesBtn" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" styleClass="sidebarUnderBtn-selected" text="Sorties">
+                                            <graphic>
+                                                <FontIcon iconLiteral="fas-arrow-left" iconSize="20" />
+                                            </graphic>
+                                        </JFXButton>
+                                    </children>
+                                    <padding>
+                                        <Insets left="51.0" />
+                                    </padding>
+                                </VBox>
+                            </children>
+                        </VBox>
+                        <JFXButton fx:id="parametresBtn" graphicTextGap="20.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" styleClass="sidebarBtn" text="Paramètres">
+                            <graphic>
+                                <FontIcon iconLiteral="fas-cog" iconSize="20" />
+                            </graphic>
+                        </JFXButton>
+                        <Region prefHeight="185.0" prefWidth="297.0" VBox.vgrow="ALWAYS" />
+                        <VBox alignment="BOTTOM_CENTER" prefHeight="76.0" prefWidth="297.0">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <children>
+                                <JFXButton fx:id="deconnexionBtn" minHeight="50.0" prefHeight="50.0" prefWidth="132.0" text="Se Déconnecter" />
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="80.0" />
+                            </VBox.margin>
+                        </VBox>
+                    </children>
+                    <padding>
+                        <Insets top="20.0" />
+                    </padding>
+                </VBox>
+            </left>
+        </BorderPane>
+    </children>
+</StackPane>

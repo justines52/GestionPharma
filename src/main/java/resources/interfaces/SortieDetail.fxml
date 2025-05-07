@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="772.0" prefWidth="1192.0" stylesheets="@../Styles/EntreeDetails.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox layoutX="202.0" layoutY="165.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="40.0">
+            <children>
+                <HBox prefHeight="247.0" prefWidth="1032.0" spacing="40.0">
+                    <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="12.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Label styleClass="labelGrand" text="Sortie" />
+                                <HBox spacing="5.0">
+                                    <children>
+                                        <Label styleClass="labelPetit" text="Numéro de Lot:" />
+                                        <Label fx:id="numLotLabel" styleClass="labelPetit" text="Label" />
+                                    </children>
+                                    <padding>
+                                        <Insets left="20.0" />
+                                    </padding>
+                                </HBox>
+                                <HBox spacing="5.0">
+                                    <children>
+                                        <Label styleClass="labelPetit" text="Date d'éntrée:" />
+                                        <Label fx:id="dateEntreeLabel" styleClass="labelPetit" text="Label" />
+                                    </children>
+                                    <padding>
+                                        <Insets left="20.0" />
+                                    </padding>
+                                </HBox>
+                                <HBox spacing="5.0">
+                                    <children>
+                                        <Label styleClass="labelPetit" text="Date de sortie:" />
+                                        <Label fx:id="dateSortieLabel" styleClass="labelPetit" text="Label" />
+                                    </children>
+                                    <padding>
+                                        <Insets left="20.0" />
+                                    </padding>
+                                </HBox>
+                                <HBox prefWidth="200.0" spacing="5.0">
+                                    <children>
+                                        <Label styleClass="labelPetit" text="Quantité:" />
+                                        <Label fx:id="quantiteLabel" styleClass="labelPetit" text="Label" />
+                                    </children>
+                                    <padding>
+                                        <Insets left="20.0" />
+                                    </padding>
+                                </HBox>
+                                <HBox prefWidth="200.0" spacing="5.0">
+                                    <children>
+                                        <Label styleClass="labelPetit" text="Fournisseur:" />
+                                        <Label fx:id="fournisseurLabel" styleClass="labelPetit" text="Label" />
+                                    </children>
+                                    <padding>
+                                        <Insets left="20.0" />
+                                    </padding>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="12.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Label styleClass="labelGrand" text="Médecin" />
+                                <HBox spacing="5.0">
+                                    <children>
+                                        <Label styleClass="labelPetit" text="Nom:" />
+                                        <Label fx:id="nomMedLabel" styleClass="labelPetit" text="Label" />
+                                    </children>
+                                    <padding>
+                                        <Insets left="20.0" />
+                                    </padding>
+                                </HBox>
+                                <HBox spacing="5.0">
+                                    <children>
+                                        <Label styleClass="labelPetit" text="Prénom:" />
+                                        <Label fx:id="prenomMedLabel" styleClass="labelPetit" text="Label" />
+                                    </children>
+                                    <padding>
+                                        <Insets left="20.0" />
+                                    </padding>
+                                </HBox>
+                                <HBox spacing="5.0">
+                                    <children>
+                                        <Label styleClass="labelPetit" text="Spécialité:" />
+                                        <Label fx:id="specialiteMedLabel" styleClass="labelPetit" text="Label" />
+                                    </children>
+                                    <padding>
+                                        <Insets left="20.0" />
+                                    </padding>
+                                </HBox>
+                            </children>
+                            <padding>
+                                <Insets left="80.0" />
+                            </padding>
+                        </VBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </HBox>
+            <HBox prefHeight="321.0" prefWidth="1032.0" spacing="50.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="12.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                           <children>
+                              <Label styleClass="labelGrand" text="Produit-" />
+                              <Label styleClass="labelGrand30" text="Label">
+                                 <padding>
+                                    <Insets top="13.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox spacing="5.0">
+                           <children>
+                              <Label styleClass="labelPetit" text="Nom:" />
+                              <Label fx:id="nomProduitLabel" styleClass="labelPetit" text="Label" />
+                           </children>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </HBox>
+                        <HBox spacing="5.0">
+                           <children>
+                              <Label styleClass="labelPetit" text="Dosage:" />
+                              <Label fx:id="dosageLabel" styleClass="labelPetit" text="Label" />
+                           </children>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </HBox>
+                        <HBox spacing="5.0">
+                           <children>
+                              <Label styleClass="labelPetit" text="Forme:" />
+                              <Label fx:id="formeLabel" styleClass="labelPetit" text="Label" />
+                           </children>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefWidth="200.0" spacing="5.0">
+                           <children>
+                              <Label styleClass="labelPetit" text="Voie:" />
+                              <Label fx:id="voieLabel" styleClass="labelPetit" text="Label" />
+                           </children>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefWidth="200.0" spacing="5.0">
+                           <children>
+                              <Label styleClass="labelPetit" text="Sous-Classe:" />
+                              <Label fx:id="sousClasseLabel" styleClass="labelPetit" text="Label" />
+                           </children>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                           <children>
+                              <Label styleClass="labelPetit" text="Classe Therapeutique" />
+                              <Label fx:id="classeTherapeutiqueLabel" styleClass="labelPetit" text="Label" />
+                           </children>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                           <children>
+                              <Label styleClass="labelPetit" text="Date de Fabrication:" />
+                              <Label fx:id="dateFabricationLabel" styleClass="labelPetit" text="Label" />
+                           </children>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                           <children>
+                              <Label styleClass="labelPetitRouge" text="Date d'expiration:" />
+                              <Label fx:id="dateExpirationLabel" styleClass="labelPetitRouge" text="Label" />
+                           </children>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="12.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label styleClass="labelGrand" text="Patient" />
+                        <HBox spacing="5.0">
+                           <children>
+                              <Label styleClass="labelPetit" text="Nom:" />
+                              <Label fx:id="nomPatientLabel" styleClass="labelPetit" text="Label" />
+                           </children>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </HBox>
+                        <HBox spacing="5.0">
+                           <children>
+                              <Label styleClass="labelPetit" text="Prénom:" />
+                              <Label fx:id="prenomPatientLabel" styleClass="labelPetit" text="Label" />
+                           </children>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </HBox>
+                        <HBox spacing="5.0">
+                           <children>
+                              <Label styleClass="labelPetit" text="Date de Naissance:" />
+                              <Label fx:id="dateDeNaissancePatientLabel" styleClass="labelPetit" text="Label" />
+                           </children>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefWidth="200.0" spacing="5.0">
+                           <children>
+                              <Label styleClass="labelPetit" text="Genre:" />
+                              <Label fx:id="genrePatientLabel" styleClass="labelPetit" text="Label" />
+                           </children>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefWidth="200.0" spacing="5.0">
+                           <children>
+                              <Label styleClass="labelPetit" text="Numéro de télephone:" />
+                              <Label fx:id="numTelPatientLabel" styleClass="labelPetit" text="Label" />
+                           </children>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="80.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="119.0" prefWidth="1032.0">
+               <children>
+                  <JFXButton maxWidth="811.0" prefHeight="75.0" prefWidth="811.0" styleClass="accordBtn" text="D'accord" />
+               </children>
+            </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
