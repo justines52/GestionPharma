@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="854.0" prefWidth="787.0" stylesheets="@../Styles/AjouterEntree.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox alignment="TOP_CENTER" layoutX="344.0" layoutY="327.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="30.0">
+            <children>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Label styleClass="labelAjouter" text="Ajouter une sortie">
+                            <HBox.margin>
+                                <Insets right="15.0" />
+                            </HBox.margin>
+                        </Label>
+                        <HBox prefHeight="100.0" prefWidth="241.0" spacing="10.0">
+                            <children>
+                                <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                                    <children>
+                                        <Label styleClass="labelP" text="Date de Préscription" />
+                                        <DatePicker fx:id="dateDePréscription" prefHeight="64.0" prefWidth="211.0" styleClass="DatePicker" VBox.vgrow="ALWAYS">
+                                            <VBox.margin>
+                                                <Insets />
+                                            </VBox.margin>
+                                        </DatePicker>
+                                    </children>
+                                </VBox>
+                            </children>
+                            <HBox.margin>
+                                <Insets left="20.0" />
+                            </HBox.margin>
+                        </HBox>
+                    </children>
+                </HBox>
+                <VBox prefWidth="100.0">
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                            <children>
+                                <Label fx:id="parapharmaceutiqueLabel" styleClass="labelParaAutre" text="Parapharmaceutique" />
+                                <Label fx:id="autreLabel" styleClass="labelParaAutre-selected" text="Autre" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            <HBox prefWidth="200.0" spacing="77.0">
+               <children>
+                  <VBox alignment="CENTER_LEFT" spacing="15.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label styleClass="labelP" text="Nom Médecin" />
+                        <TextField fx:id="nomMedecinTextField" prefHeight="64.0" styleClass="textField">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </TextField>
+                        <Label styleClass="labelP" text="Spécialite" />
+                        <TextField fx:id="specialiteTextFIeld" prefHeight="64.0" styleClass="textField" />
+                        <Label styleClass="labelP" text="Nom Patient" />
+                        <TextField fx:id="nomPatientTextField" prefHeight="64.0" styleClass="textField" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" spacing="15.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label styleClass="labelP" text="Prénom Médecin" />
+                        <TextField fx:id="prenomMedecinTextField" prefHeight="64.0" styleClass="textField">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </TextField>
+                        <Label styleClass="labelP" text="N° Bil" />
+                        <TextField fx:id="numBilTextField" prefHeight="64.0" styleClass="textField" />
+                        <Label styleClass="labelP" text="Prénom Patient" />
+                        <TextField fx:id="prenomPatientTextField" prefHeight="64.0" styleClass="textField" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+                <HBox alignment="CENTER_LEFT" prefHeight="123.0" prefWidth="687.0" spacing="46.0">
+                    <children>
+                        <VBox prefHeight="200.0" prefWidth="195.0" spacing="12.0">
+                            <children>
+                                <Label styleClass="labelP" text="Date de Naissance" />
+                        <DatePicker fx:id="dateDeNaissance" prefHeight="64.0" styleClass="DatePicker" />
+                            </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="135.0" spacing="12.0">
+                            <children>
+                                <Label styleClass="labelP" text="Genre" />
+                                <JFXComboBox fx:id="genreComboBox" maxWidth="1.7976931348623157E308" prefHeight="64.0" styleClass="ComboBox" />
+                            </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="267.0" spacing="12.0">
+                            <children>
+                                <Label styleClass="labelP" text="Numéro de télephone" />
+                        <TextField fx:id="numTelTextField" prefHeight="64.0" styleClass="textField" />
+                            </children>
+                        </VBox>
+                    </children>
+                    <padding>
+                        <Insets top="20.0" />
+                    </padding>
+                </HBox>
+                <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                    <children>
+                        <JFXButton fx:id="AjouterBtn" prefHeight="75.0" prefWidth="640.0" styleClass="ajouterEntreeBtn" text="Ajouter" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

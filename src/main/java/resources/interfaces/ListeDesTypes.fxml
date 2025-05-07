@@ -51,9 +51,9 @@
                             <children>
                                 <TableView fx:id="prescriptionsTable" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                     <columns>
-                                        <TableColumn fx:id="nomClasseColumn" prefWidth="75.0" text="Nom de la classe" />
-                                        <TableColumn fx:id="nomSousClasseColumn" prefWidth="75.0" text="Nom de la sous-classe" />
+                                        <TableColumn fx:id="nomSpecialiteColumn" prefWidth="75.0" text="Nom de la Spécialité" />
                                         <TableColumn fx:id="nomClasseTherapeutiqueColumn" prefWidth="75.0" text="Nom de la classe Thérapeutique" />
+                                        <TableColumn fx:id="nomSousClasseColumn" prefWidth="75.0" text="Nom des Sous Classes" />
                                         <TableColumn fx:id="medicamentsColumn" prefWidth="75.0" text="Médicaments" />
                                     </columns>
                                     <columnResizePolicy>

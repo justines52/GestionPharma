@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="854.0" prefWidth="787.0" stylesheets="@../Styles/AjouterEntree.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox alignment="TOP_CENTER" layoutX="344.0" layoutY="327.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="30.0">
+            <children>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Label styleClass="labelAjouter" text="Ajouter une sortie">
+                            <HBox.margin>
+                                <Insets right="15.0" />
+                            </HBox.margin>
+                        </Label>
+                        <HBox prefHeight="100.0" prefWidth="241.0" spacing="10.0">
+                            <children>
+                                <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                                    <children>
+                                        <Label styleClass="labelP" text="Date de sortie" />
+                                        <DatePicker fx:id="dateDeSortie" prefHeight="64.0" prefWidth="211.0" styleClass="DatePicker" VBox.vgrow="ALWAYS">
+                                            <VBox.margin>
+                                                <Insets />
+                                            </VBox.margin>
+                                        </DatePicker>
+                                    </children>
+                                </VBox>
+                            </children>
+                            <HBox.margin>
+                                <Insets left="20.0" />
+                            </HBox.margin>
+                        </HBox>
+                    </children>
+                </HBox>
+                <VBox prefWidth="100.0">
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                            <children>
+                                <Label fx:id="parapharmaceutiqueLabel" styleClass="labelParaAutre" text="Parapharmaceutique" />
+                                <Label fx:id="autreLabel" styleClass="labelParaAutre-selected" text="Autre" />
+                            </children>
+                        </HBox>
+                        <VBox alignment="CENTER_LEFT" prefWidth="100.0" spacing="15.0">
+                            <VBox.margin>
+                                <Insets top="30.0" />
+                            </VBox.margin>
+                            <padding>
+                                <Insets left="200.0" right="182.0" />
+                            </padding>
+                            <children>
+                                <Label styleClass="labelP" text="N° Lot" />
+                                <TextField fx:id="numLotTextField" prefHeight="64.0" styleClass="textField">
+                                    <VBox.margin>
+                                        <Insets />
+                                    </VBox.margin>
+                                </TextField>
+                                <Label styleClass="labelP" text="Quantite" />
+                                <TextField fx:id="quantiteTextFIeld" prefHeight="64.0" styleClass="textField" />
+                                <Label styleClass="labelP" text="Médicament" />
+                                <TextField fx:id="medicamentTextField" prefHeight="64.0" styleClass="textField" />
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+            <HBox alignment="CENTER" prefHeight="123.0" prefWidth="687.0" spacing="50.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="135.0" spacing="12.0">
+                     <children>
+                        <Label styleClass="labelP" text="Dosage" />
+                        <TextField fx:id="dosageTextField" prefHeight="64.0" styleClass="textField" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="135.0" spacing="12.0">
+                     <children>
+                        <Label styleClass="labelP" text="Forme" />
+                        <JFXComboBox fx:id="formeComboBox" maxWidth="1.7976931348623157E308" prefHeight="64.0" styleClass="ComboBox" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="135.0" spacing="12.0">
+                     <children>
+                        <Label styleClass="labelP" text="Voie" />
+                        <JFXComboBox fx:id="voieComboBox" maxWidth="1.7976931348623157E308" prefHeight="64.0" styleClass="ComboBox" />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </HBox>
+                <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                    <children>
+                        <JFXButton fx:id="suivantBtn" prefHeight="75.0" prefWidth="640.0" styleClass="ajouterEntreeBtn" text="Suivant" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
