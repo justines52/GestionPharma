@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "DM Sans";
+    src: url("../Fonts/DM_Sans/static/DMSans-Regular.ttf");
+    font-weight: normal;
+
+}
+@font-face {
+    font-family: "DM Sans";
+    src: url("../Fonts/DM_Sans/static/DMSans-Bold.ttf");
+    font-weight: bold;
+
+}
+.labelConfirmation{
+    -fx-font-size: 36px;
+    -fx-font-family: "DM Sans";
+    -fx-font-weight: bold;
+    -fx-text-fill: #3A7B8C;
+}
+.supprimerBtn{
+    -fx-font-size: 17px;
+    -fx-text-fill: white;
+    -fx-font-family: "DM Sans";
+    -fx-font-weight: bold;
+    -fx-background-radius: 12px;
+    -fx-border-radius: 12px;
+    -fx-background-color: #BF2B37;
+}
+.AnnulerBtn{
+    -fx-font-size: 17px;
+    -fx-text-fill: #3A7B8C;
+    -fx-font-family: "DM Sans";
+    -fx-font-weight: bold;
+    -fx-background-radius: 12px;
+    -fx-border-radius: 12px;
+    -fx-border-color: #3A7B8C;
+    -fx-border-width: 2px;
+    -fx-background-color: #E9F3F6;
+}
+.root{
+    -fx-border-radius: 32px;
+    -fx-background-radius: 32px;
+}

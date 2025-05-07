@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "DM Sans";
+    src: url("../Fonts/DM_Sans/static/DMSans-Regular.ttf");
+    font-weight: normal;
+
+}
+@font-face {
+    font-family: "DM Sans";
+    src: url("../Fonts/DM_Sans/static/DMSans-Bold.ttf");
+    font-weight: bold;
+
+}
+
+
+.textField{
+    -fx-font-size: 17px;
+    -fx-font-family: "DM Sans";
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-border-color:  #8A8A8A;
+}
+.ComboBox {
+    -fx-font-size: 17px;
+    -fx-font-family: "DM Sans";
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-background-color: white;
+    -fx-border-color:  #8A8A8A;
+    -jfx-focus-color: transparent; /* Supprime la couleur de la ligne une fois focus */
+    -jfx-unfocus-color: transparent; /* Supprime la couleur de la ligne sans focus */
+
+}
+.ComboBox .input-line {
+    -fx-stroke: transparent;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+.ComboBox:focused .input-line,
+.ComboBox:focused .focused-line {
+    -fx-stroke: transparent;
+    -fx-background-color: transparent;
+}
+.labelAjouter{
+    -fx-font-size: 35px;
+    -fx-font-family: "DM Sans";
+    -fx-font-weight: bold;
+    -fx-text-fill: #3A7B8C;
+}
+.labelP{
+    -fx-font-size: 17px;
+    -fx-font-family: "DM Sans";
+    -fx-font-weight: normal;
+    -fx-text-fill: #252525;
+}
+.modifierBtn{
+    -fx-font-size: 24px;
+    -fx-text-fill: white;
+    -fx-font-family: "DM Sans";
+    -fx-font-weight: bold;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-background-color: #3A7B8C;
+}
+.root{
+    -fx-border-radius: 32px;
+    -fx-background-radius: 32px;
+}
