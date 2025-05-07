@@ -17,8 +17,10 @@
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
 <!-- Mise en page principale avec un BorderPane -->
-
-<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="916.0" prefWidth="1200.0" stylesheets="@../Styles/Préscriptions.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PrescriptionController">
+<?import javafx.scene.layout.StackPane?>
+<StackPane fx:controller="Controller.PrescriptionController" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="916.0" prefWidth="1200.0" stylesheets="@../Styles/Préscriptions.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" >
 
    <!-- Section centrale -->
    <center>
@@ -46,7 +48,7 @@
                   <FontIcon iconLiteral="fas-search" iconSize="20" wrappingWidth="31.0" />
                </children>
             </HBox>
-            <JFXButton fx:id="filtreBtn" graphicTextGap="10.0" layoutX="648.0" layoutY="145.0" prefHeight="40.0" prefWidth="127.0" styleClass="buttonN" text="Filtre" AnchorPane.rightAnchor="340.0" AnchorPane.topAnchor="148.0">
+            <JFXButton fx:id="filtreBtn" graphicTextGap="10.0" layoutX="648.0" layoutY="145.0" prefHeight="40.0" prefWidth="154.0" styleClass="buttonN" text="Filtre" AnchorPane.rightAnchor="340.0" AnchorPane.topAnchor="148.0">
                <font>
                   <Font size="18.0" />
                </font>
@@ -219,3 +221,6 @@
       </VBox>
    </left>
 </BorderPane>
+   </children>
+</StackPane>
+
