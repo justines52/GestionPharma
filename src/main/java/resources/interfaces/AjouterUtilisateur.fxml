@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="644.0" prefWidth="787.0" stylesheets="@../Styles/UtilisateurModifier.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox layoutX="344.0" layoutY="327.0" prefHeight="200.0" prefWidth="100.0" spacing="15.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="30.0">
+            <children>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                    <children>
+                        <Label styleClass="labelAjouter" text="Ajouter un Utilisateur" />
+                    </children>
+                </HBox>
+                <HBox prefHeight="100.0" prefWidth="200.0" spacing="77.0">
+                    <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Label styleClass="labelP" text="Nom" />
+                                <TextField fx:id="nomTextField" maxWidth="1.7976931348623157E308" prefHeight="64.0" styleClass="textField" />
+                            </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Label styleClass="labelP" text="Prénom" />
+                                <TextField fx:id="prenomTextField" maxWidth="1.7976931348623157E308" prefHeight="64.0" styleClass="textField" />
+                            </children>
+                        </VBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin>
+                </HBox>
+                <Label styleClass="labelP" text="Role">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </Label>
+                <JFXComboBox fx:id="roleComboBox" maxWidth="1.7976931348623157E308" prefHeight="64.0" styleClass="ComboBox" />
+                <Label styleClass="labelP" text="Nom D'Utilisateur" />
+                <TextField fx:id="nomUtilisateurTextField" prefHeight="64.0" styleClass="textField" />
+                <JFXButton fx:id="ajouterBtn" maxWidth="1.7976931348623157E308" prefHeight="64.0" styleClass="modifierBtn" text="Ajouter">
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </JFXButton>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
