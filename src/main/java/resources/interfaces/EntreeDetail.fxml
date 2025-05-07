@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="730.0" prefWidth="1000.0" stylesheets="@../Styles/EntreeDetails.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="202.0" layoutY="165.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefWidth="840.0" spacing="5.0">
+               <children>
+                  <Label styleClass="labelPetit" text="Fait par:" />
+                  <Label fx:id="userLabel" styleClass="labelPetitRouge" text="user01" />
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <Label styleClass="labelGrand" text="Entrée-">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="entreeLabel" styleClass="labelGrand" text="Label" />
+               </children>
+            </HBox>
+            <VBox prefHeight="130.0" prefWidth="840.0" spacing="10.0">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                     <children>
+                        <Label styleClass="labelPetit" text="Numéro de Lot:" />
+                        <Label fx:id="numLotLabel" styleClass="labelPetit" text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                     <children>
+                        <Label styleClass="labelPetit" text="Date d’entrée:" />
+                        <Label fx:id="dateEntreeLabel" styleClass="labelPetit" text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                     <children>
+                        <Label styleClass="labelPetit" text="Quantité:" />
+                        <Label fx:id="quantiteLabel" styleClass="labelPetit" text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                     <children>
+                        <Label styleClass="labelPetit" text="Fournisseur:" />
+                        <Label fx:id="fournisseurLabel" styleClass="labelPetit" text="Label" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox spacing="10.0">
+               <children>
+                  <Label styleClass="labelGrand" text="Produit-">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="produitLabel" styleClass="labelGrand" text="Label" />
+               </children>
+            </HBox>
+            <VBox prefHeight="323.0" prefWidth="840.0" spacing="10.0">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                     <children>
+                        <Label styleClass="labelPetit" text="Nom:" />
+                        <Label fx:id="nomLabel" styleClass="labelPetit" text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                     <children>
+                        <Label styleClass="labelPetit" text="Dosage:" />
+                        <Label fx:id="dosageLabel" styleClass="labelPetit" text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                     <children>
+                        <Label styleClass="labelPetit" text="Forme:" />
+                        <Label fx:id="formeLabel" styleClass="labelPetit" text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                     <children>
+                        <Label styleClass="labelPetit" text="Voie:" />
+                        <Label fx:id="voieLabel" styleClass="labelPetit" text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                     <children>
+                        <Label styleClass="labelPetit" text="Sous-Classe:" />
+                        <Label fx:id="sousClasseLabel" styleClass="labelPetit" text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                     <children>
+                        <Label styleClass="labelPetit" text="Classe thérapeutique:" />
+                        <Label fx:id="classeTherapeutique" styleClass="labelPetit" text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                     <children>
+                        <Label styleClass="labelPetit" text="Prix Unitaire:" />
+                        <Label fx:id="prixUnitaireLabel" styleClass="labelPetit" text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                     <children>
+                        <Label styleClass="labelPetit" text="Date de fabrication:" />
+                        <Label fx:id="dateFabricationLabel" styleClass="labelPetit" text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                     <children>
+                        <Label styleClass="labelPetitRouge" text="Date d’éxpiration:" />
+                        <Label fx:id="dateExpirationLabel" styleClass="labelPetitRouge" text="Label" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <JFXButton fx:id="accordBtn" maxWidth="1.7976931348623157E308" prefHeight="84.0" prefWidth="840.0" styleClass="accordBtn" text="D'accord">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

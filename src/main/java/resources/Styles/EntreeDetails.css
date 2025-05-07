@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "DM Sans";
+    src: url("../Fonts/DM_Sans/static/DMSans-Regular.ttf");
+    font-weight: normal;
+
+}
+@font-face {
+    font-family: "DM Sans";
+    src: url("../Fonts/DM_Sans/static/DMSans-Bold.ttf");
+    font-weight: bold;
+
+}
+.labelGrand{
+    -fx-font-size: 40px;
+    -fx-font-family: "DM Sans";
+    -fx-font-weight: bold;
+    -fx-text-fill: #3A7B8C;
+}
+.labelPetit{
+    -fx-font-size: 17px;
+    -fx-font-family: "DM Sans";
+    -fx-font-weight: normal;
+    -fx-text-fill: #252525;
+}
+.labelPetitRouge{
+    -fx-font-size: 17px;
+    -fx-font-family: "DM Sans";
+    -fx-font-weight: normal;
+    -fx-text-fill: #8C4B3A;
+}
+.accordBtn{
+    -fx-font-size: 24px;
+    -fx-text-fill: white;
+    -fx-font-family: "DM Sans";
+    -fx-font-weight: bold;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-background-color: #3A7B8C;
+}
+.root{
+    -fx-border-radius: 32px;
+    -fx-background-radius: 32px;
+}
