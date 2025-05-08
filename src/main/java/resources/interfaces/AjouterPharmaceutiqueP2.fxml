@@ -14,12 +14,15 @@
     <children>
         <VBox alignment="TOP_CENTER" layoutX="344.0" layoutY="327.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="30.0">
             <children>
-                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                <HBox alignment="CENTER" prefHeight="116.0" prefWidth="687.0">
                     <children>
                         <Label styleClass="labelAjouter" text="Ajouter une sortie">
                             <HBox.margin>
                                 <Insets right="15.0" />
                             </HBox.margin>
+                     <padding>
+                        <Insets top="2.0" />
+                     </padding>
                         </Label>
                         <HBox prefHeight="100.0" prefWidth="241.0" spacing="10.0">
                             <children>
@@ -40,19 +43,12 @@
                         </HBox>
                     </children>
                 </HBox>
-                <VBox prefWidth="100.0">
-                    <VBox.margin>
-                        <Insets top="15.0" />
-                    </VBox.margin>
-                    <children>
-                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
-                            <children>
-                                <Label fx:id="parapharmaceutiqueLabel" styleClass="labelParaAutre" text="Parapharmaceutique" />
-                                <Label fx:id="autreLabel" styleClass="labelParaAutre-selected" text="Autre" />
-                            </children>
-                        </HBox>
-                    </children>
-                </VBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <JFXButton fx:id="pharmaceutiqueBtn" styleClass="labelParaAutre-selected" text="Pharmaceutique" />
+                  <JFXButton fx:id="autreBtn" styleClass="labelParaAutre" text="Autre" />
+               </children>
+                  </HBox>
             <HBox prefWidth="200.0" spacing="77.0">
                <children>
                   <VBox alignment="CENTER_LEFT" spacing="15.0" HBox.hgrow="ALWAYS">

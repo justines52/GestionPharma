@@ -63,7 +63,7 @@
     -fx-font-weight: normal;
 }
 .labelAjouter{
-    -fx-font-size: 45px;
+    -fx-font-size: 36px;
     -fx-font-family: "DM Sans";
     -fx-font-weight: bold;
     -fx-text-fill: #3A7B8C;
@@ -86,4 +86,25 @@
 .root{
     -fx-border-radius: 32px;
     -fx-background-radius: 32px;
+    -fx-background-color: white;
+}
+.labelParaAutre {
+    -fx-font-size: 15px;
+    -fx-font-family: "DM Sans";
+    -fx-font-weight: normal;
+    -fx-text-fill: #252525;
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-color: #8A8A8A;
+}
+.labelParaAutre-selected {
+    -fx-font-size: 15px;
+    -fx-font-family: "DM Sans";
+    -fx-font-weight: normal;
+    -fx-text-fill: #3A7B8C;
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-color: #3A7B8C;
+}
+.labelParaAutre:hover {
+    -fx-text-fill: #3A7B8C;
+    -fx-border-color: #3A7B8C;
 }

@@ -19,7 +19,7 @@
 
 <!-- Mise en page principale avec un BorderPane -->
 
-<StackPane fx:id="rootStackPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EntreeController">
+<StackPane fx:id="rootStackPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SortieController">
     <children>
         <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="916.0" prefWidth="1200.0" stylesheets="@../Styles/SortieFinale.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
 
@@ -76,7 +76,7 @@
                                     </columnResizePolicy>
                                 </TableView>
                             </children></AnchorPane>
-                        <JFXButton fx:id="ajouterEntreesBtn" graphicTextGap="10.0" layoutX="39.0" layoutY="153.0" onAction="#handleAjouterEntree" prefHeight="43.0" prefWidth="212.0" styleClass="buttonN" text="Ajouter Sortie" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="153.0">
+                        <JFXButton fx:id="ajouterSortiesBtn" graphicTextGap="10.0" layoutX="39.0" layoutY="153.0" onAction="#handleAjouterSortie" prefHeight="43.0" prefWidth="212.0" styleClass="buttonN" text="Ajouter Sortie" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="153.0">
                             <font>
                                 <Font size="18.0" />
                             </font>

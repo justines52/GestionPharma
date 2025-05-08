@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
@@ -9,7 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="854.0" prefWidth="787.0" stylesheets="@../Styles/AjouterEntree.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="854.0" prefWidth="787.0" stylesheets="@../Styles/AjouterEntree.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SortieController">
     <children>
         <VBox alignment="TOP_CENTER" layoutX="344.0" layoutY="327.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="30.0">
          <children>
@@ -19,6 +20,9 @@
                      <HBox.margin>
                         <Insets right="15.0" />
                      </HBox.margin>
+                     <padding>
+                        <Insets top="18.0" />
+                     </padding>
                   </Label>
                   <HBox prefHeight="100.0" prefWidth="241.0" spacing="10.0">
                      <children>
@@ -44,10 +48,14 @@
                   <Insets top="15.0" />
                </VBox.margin>
                <children>
-                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                      <children>
-                        <Label fx:id="parapharmaceutiqueLabel" styleClass="labelParaAutre-selected" text="Parapharmaceutique" />
-                        <Label fx:id="autreLabel" styleClass="labelParaAutre" text="Autre" />
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton fx:id="pharmaceutiqueBtn" styleClass="labelParaAutre" text="Pharmaceutique" />
+                              <JFXButton fx:id="autreBtn" styleClass="labelParaAutre-selected" text="Autre" />
+                           </children>
+                        </HBox>
                      </children>
                   </HBox>
                   <VBox alignment="CENTER_LEFT" prefWidth="100.0" spacing="15.0">
@@ -66,8 +74,8 @@
                         </TextField>
                         <Label styleClass="labelP" text="Quantite" />
                         <TextField fx:id="quantiteTextFIeld" prefHeight="64.0" styleClass="textField" />
-                        <Label styleClass="labelP" text="Médicament" />
-                        <TextField fx:id="medicamentTextField" prefHeight="64.0" styleClass="textField" />
+                        <Label styleClass="labelP" text="Catégorie" />
+                        <JFXComboBox prefHeight="64.0" prefWidth="305.0" styleClass="ComboBox" />
                      </children>
                   </VBox>
                </children>
