@@ -21,7 +21,7 @@
 
 <StackPane fx:id="rootStackPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EntreeController">
     <children>
-        <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="916.0" prefWidth="1200.0" stylesheets="@../Styles/EntreeFinale.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+        <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="916.0" prefWidth="1200.0" stylesheets="@../Styles/SortieFinale.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
 
             <!-- Section centrale -->
             <center>
@@ -29,7 +29,7 @@
                     <children>
                         <VBox layoutX="104.0" layoutY="-21.0" prefHeight="107.0" prefWidth="436.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="30.0">
                             <children>
-                                <Label styleClass="labelbold" text="Stock">
+                                <Label styleClass="labelbold" text="Sorties">
                                     <font>
                                         <Font name="System Bold" size="36.0" />
                                     </font>
@@ -199,6 +199,11 @@
                                                 <FontIcon iconLiteral="fas-arrow-left" iconSize="20" />
                                             </graphic>
                                         </JFXButton>
+                              <JFXButton fx:id="facturesBtn" graphicTextGap="19.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="64.0" styleClass="sidebarUnderBtn" text="Factures">
+                                 <graphic>
+                                    <FontIcon iconLiteral="fas-file-invoice-dollar" iconSize="20" styleClass="facture-icon" />
+                                 </graphic>
+                              </JFXButton>
                                     </children>
                                     <padding>
                                         <Insets left="51.0" />
@@ -206,11 +211,11 @@
                                 </VBox>
                             </children>
                         </VBox>
-                        <JFXButton fx:id="parametresBtn" graphicTextGap="20.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" styleClass="sidebarBtn" text="Paramètres">
-                            <graphic>
-                                <FontIcon iconLiteral="fas-cog" iconSize="20" />
-                            </graphic>
-                        </JFXButton>
+                  <JFXButton fx:id="utilisateursBtn" graphicTextGap="20.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" styleClass="sidebarBtn" text="Utilisateurs">
+                     <graphic>
+                        <FontIcon iconLiteral="fas-id-card" iconSize="20" />
+                     </graphic>
+                  </JFXButton>
                         <Region prefHeight="185.0" prefWidth="297.0" VBox.vgrow="ALWAYS" />
                         <VBox alignment="BOTTOM_CENTER" prefHeight="76.0" prefWidth="297.0">
                             <opaqueInsets>

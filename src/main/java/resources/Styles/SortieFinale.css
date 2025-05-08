@@ -125,7 +125,7 @@
 .table-view .column-header .label {
     -fx-text-fill: #8c8c8c;
     -fx-background-color: white;
-    -fx-font-size: 15px;
+    -fx-font-size: 17px;
     -fx-font-weight: bold;
     -fx-alignment: CENTER;
     -fx-text-alignment: CENTER;
@@ -138,16 +138,14 @@
     -fx-alignment: CENTER ;
     -fx-border-color: transparent;
     -fx-padding: 10 0 0 0;
-    -fx-font-size: 19px;
-    -fx-font-weight: bold;
-    -fx-min-height: 40px;
+    -fx-font-size: 17px;
+    -fx-min-height: 50px;
 }
 .table-view .table-row-cell * {
-    -fx-alignment: CENTER ;
+    -fx-alignment: CENTER-LEFT;
     -fx-text-alignment: CENTER;
-    -fx-font-size: 19px;
-    -fx-font-weight: bold;
-    -fx-min-height: 40px;
+    -fx-font-size: 17px;
+    -fx-min-height: 50px;
 }
 #dosageColumn .column-header{
     -fx-padding: 0 70 0 0;
@@ -241,4 +239,7 @@
     -fx-effect: dropshadow(gaussian, rgba(43, 122, 139, 0.3), 20, 0.3, 0, 0);
     -fx-border-radius: 15px ;
     -fx-background-radius: 15px;
+}
+.facture-icon{
+    -fx-translate-x: 1;
 }

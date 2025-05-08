@@ -118,7 +118,7 @@
     -fx-border-radius: 10px;
     -fx-background-color: #FFFFFF;
 
-    -fx-min-height: 47px; /* Fixe une hauteur minimale */
+    -fx-min-height: 50px; /* Fixe une hauteur minimale */
 
 
 }
@@ -135,20 +135,18 @@
 .table-view .table-row-cell {
     -fx-background-color: transparent;
     -fx-border-color: transparent;
-    -fx-alignment: CENTER ;
     -fx-border-color: transparent;
     -fx-padding: 10 0 0 0;
-    -fx-font-size: 19px;
-    -fx-font-weight: bold;
+    -fx-font-size: 17px;
     -fx-text-fill: #333333;
-    -fx-min-height: 40px;
+    -fx-min-height: 50px;
 }
 .table-view .table-row-cell * {
-    -fx-alignment: CENTER_LEFT ;
+    -fx-alignment: CENTER-LEFT ;
     -fx-text-alignment: CENTER;
-    -fx-font-size: 19px;
-    -fx-font-weight: bold;
-    -fx-min-height: 40px;
+    -fx-font-size: 17px;
+   -fx-text-fill: #333333;
+    -fx-min-height: 50px;
 }
 .table-view .table-row-cell:selected {
     -fx-background-color: #dceff3;

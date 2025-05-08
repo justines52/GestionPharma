@@ -176,6 +176,11 @@
                                                 <FontIcon iconLiteral="fas-arrow-left" iconSize="20" />
                                             </graphic>
                                         </JFXButton>
+                              <JFXButton fx:id="facturesBtn" graphicTextGap="19.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="64.0" styleClass="sidebarUnderBtn" text="Factures">
+                                 <graphic>
+                                    <FontIcon iconLiteral="fas-file-invoice-dollar" iconSize="20" styleClass="facture-icon" />
+                                 </graphic>
+                              </JFXButton>
                                     </children>
                                     <padding>
                                         <Insets left="51.0" />
@@ -183,11 +188,11 @@
                                 </VBox>
                             </children>
                         </VBox>
-                        <JFXButton fx:id="parametresBtn" graphicTextGap="20.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" styleClass="sidebarBtn" text="Paramètres">
-                            <graphic>
-                                <FontIcon iconLiteral="fas-cog" iconSize="20" />
-                            </graphic>
-                        </JFXButton>
+                  <JFXButton fx:id="utilisateursBtn" graphicTextGap="20.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" styleClass="sidebarBtn" text="Utilisateurs">
+                     <graphic>
+                        <FontIcon iconLiteral="fas-id-card" iconSize="20" />
+                     </graphic>
+                  </JFXButton>
                         <Region prefHeight="185.0" prefWidth="297.0" VBox.vgrow="ALWAYS" />
                         <VBox alignment="BOTTOM_CENTER" prefHeight="76.0" prefWidth="297.0">
                             <opaqueInsets>
