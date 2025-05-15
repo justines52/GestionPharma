@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
@@ -19,7 +20,7 @@
 
 <!-- Mise en page principale avec un BorderPane -->
 
-<StackPane fx:id="rootStackPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EntreeController">
+<StackPane fx:id="rootStackPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
     <children>
         <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="916.0" prefWidth="1200.0" stylesheets="@../Styles/EntreeFinale.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
 
@@ -101,6 +102,37 @@
                         </VBox>
                      </children>
                   </HBox>
+                  <VBox layoutX="56.0" layoutY="91.0" prefHeight="286.0" prefWidth="300.0" spacing="10.0" styleClass="filtreVbox" AnchorPane.rightAnchor="350.0" AnchorPane.topAnchor="215.0" managed="false" visible="false">
+                     <padding>
+                        <Insets bottom="20.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <Label text="Catégorie" />
+                        <VBox prefWidth="100.0" spacing="10.0">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <children>
+                              <JFXCheckBox fx:id="pharmaceutiqueCheckBox" text="Pharmaceutique" />
+                              <JFXCheckBox fx:id="paraPharmaceutiqueCheckBox" text="Para-Pharmaceutique" />
+                              <JFXCheckBox fx:id="produitLaboratoireCheckBox" text="Produit Laboratoire" />
+                              <JFXCheckBox fx:id="dispositifMedicauxCheckBox" text="Dispositif Médicaux" />
+                              <JFXCheckBox fx:id="materielHospitalierCheckBox" text="Materiel Hospitalier" />
+                           </children>
+                        </VBox>
+                        <Label text="Status" />
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <children>
+                              <JFXCheckBox fx:id="enStockCheckBox" text="En stock" />
+                              <JFXCheckBox fx:id="stockFaibleCheckBox" text="Stock faible" />
+                              <JFXCheckBox fx:id="ruptureDeStockCheckBox" text="Rupture de stock" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
                     </children></AnchorPane>
             </center>
             <left>
@@ -136,7 +168,7 @@
                         </JFXButton>
                         <VBox>
                             <children>
-                                <JFXButton fx:id="gestionMedicaleBtn" graphicTextGap="20.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" onAction="#onMenu1ButtonClicked" styleClass="sidebarBtn" text="Gestion Médicale">
+                                <JFXButton fx:id="gestionMedicaleBtn" graphicTextGap="20.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" styleClass="sidebarBtn" text="Gestion Médicale">
                                     <graphic>
                                         <FontIcon iconLiteral="fas-plus" iconSize="20" selectionEnd="1" selectionStart="1" strokeWidth="0.0" styleClass="gestion-medicale-icon" wrappingWidth="17.5" />
                                     </graphic>
@@ -173,7 +205,7 @@
                         </VBox>
                         <VBox alignment="CENTER_LEFT">
                             <children>
-                                <JFXButton fx:id="stockBtn" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" onAction="#onMenu2ButtonClicked" styleClass="sidebarBtn-selected" text="Stock">
+                                <JFXButton fx:id="stockBtn" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" styleClass="sidebarBtn-selected" text="Stock">
                                     <graphic>
                                         <FontIcon iconLiteral="fas-box-open" iconSize="20" styleClass="stock-icon" />
                                     </graphic>
@@ -199,7 +231,7 @@
                         </VBox>
                         <VBox>
                             <children>
-                                <JFXButton fx:id="transactionsBtn" graphicTextGap="20.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" onAction="#onMenu3ButtonClicked" styleClass="sidebarBtn" text="Transactions">
+                                <JFXButton fx:id="transactionsBtn" graphicTextGap="20.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" styleClass="sidebarBtn" text="Transactions">
                                     <graphic>
                                         <FontIcon iconLiteral="fas-exchange-alt" iconSize="20" styleClass="FontIcon" />
                                     </graphic>
