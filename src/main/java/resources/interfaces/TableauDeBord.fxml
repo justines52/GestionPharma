@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<!-- Mise en page principale avec un BorderPane -->
+
+<StackPane fx:id="rootStackPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TableauDeBordController">
+    <children>
+        <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="916.0" prefWidth="1200.0" stylesheets="@../Styles/TableauDeBord.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+
+            <!-- Section centrale -->
+            <center>
+                <AnchorPane fx:id="anchorPane" prefHeight="917.0" prefWidth="901.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <VBox layoutX="104.0" layoutY="-21.0" prefHeight="107.0" prefWidth="546.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="30.0">
+                            <children>
+                                <Label styleClass="labelbold" text="Tableau de bord">
+                                    <font>
+                                        <Font name="System Bold" size="36.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Bienvenue sur le système de gestion de la pharmacie du service de dermatologie.">
+                                    <font>
+                                        <Font size="13.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                        <AnchorPane layoutX="373.0" layoutY="134.0" prefHeight="732.0" prefWidth="785.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="150.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" styleClass="labelbold" text="Aperçu du Stock" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="14.0">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <Label layoutY="398.0" styleClass="labelbold" text="État du stock" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="435.0">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <HBox layoutX="114.0" layoutY="234.0" prefHeight="169.0" prefWidth="785.0" spacing="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="64.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0" styleClass="hboxCarte" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label styleClass="labelCarte" text="Médicaments en stock" />
+                                    <Label styleClass="labelCarteNoir" text="Label" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="15.0" top="15.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0" styleClass="hboxCarte" HBox.hgrow="ALWAYS">
+                                 <padding>
+                                    <Insets left="15.0" top="15.0" />
+                                 </padding>
+                                 <children>
+                                    <Label styleClass="labelCarte" text="Médicaments reçus ce mois-ci" />
+                                    <Label styleClass="labelCarteNoir" text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0" styleClass="hboxCarte" HBox.hgrow="ALWAYS">
+                                 <padding>
+                                    <Insets left="15.0" top="15.0" />
+                                 </padding>
+                                 <children>
+                                    <Label styleClass="labelCarte" text="Médicaments sortis ce mois-ci" />
+                                    <Label styleClass="labelCarteNoir" text="Label" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="102.0" layoutY="435.0" prefHeight="190.0" prefWidth="785.0" spacing="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="485.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0" styleClass="hboxCarte" HBox.hgrow="ALWAYS">
+                                 <padding>
+                                    <Insets left="15.0" top="15.0" />
+                                 </padding>
+                                 <children>
+                                    <Label styleClass="labelCarte" text="Médicaments en rupture de stock" />
+                                    <Label styleClass="labelCarteNoir" text="Label">
+                                       <VBox.margin>
+                                          <Insets bottom="15.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <JFXButton prefHeight="30.0" prefWidth="100.0" styleClass="ConsulterBtn" text="Consulter" onAction="#handleConsulter"/>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0" styleClass="hboxCarte" HBox.hgrow="ALWAYS">
+                                 <padding>
+                                    <Insets left="15.0" top="15.0" />
+                                 </padding>
+                                 <children>
+                                    <Label styleClass="labelCarte" text="Médicaments en faible stock" />
+                                    <Label styleClass="labelCarteNoir" text="Label">
+                                       <VBox.margin>
+                                          <Insets bottom="15.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <JFXButton prefHeight="30.0" prefWidth="100.0" styleClass="ConsulterBtn" text="Consulter" onAction="#handleConsulter" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0" styleClass="hboxCarte" HBox.hgrow="ALWAYS">
+                                 <padding>
+                                    <Insets left="15.0" top="15.0" />
+                                 </padding>
+                                 <children>
+                                    <Label styleClass="labelCarte" text="Médicaments expirant bientôt" />
+                                    <Label styleClass="labelCarteNoir" text="Label">
+                                       <VBox.margin>
+                                          <Insets bottom="15.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <JFXButton prefHeight="30.0" prefWidth="100.0" styleClass="ConsulterBtn" text="Consulter" onAction="#handleConsulter">
+                                       <VBox.margin>
+                                          <Insets bottom="15.0" />
+                                       </VBox.margin>
+                                    </JFXButton>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children></AnchorPane>
+                    </children></AnchorPane>
+            </center>
+            <left>
+                <VBox fx:id="sideBar" prefHeight="916.0" prefWidth="355.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <HBox alignment="CENTER_LEFT">
+                            <children>
+                                <ImageView fx:id="pharmacieLogo" fitHeight="72.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                                    <image>
+                                        <Image url="@../Images/pharma1.png" />
+                                    </image>
+                                </ImageView>
+                                <Label styleClass="labelbold" text="Pharmacie">
+                                    <font>
+                                        <Font name="System Bold" size="30.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                            <opaqueInsets>
+                                <Insets left="5.0" right="5.0" />
+                            </opaqueInsets>
+                            <VBox.margin>
+                                <Insets bottom="50.0" top="10.0" />
+                            </VBox.margin>
+                            <padding>
+                                <Insets left="56.0" />
+                            </padding>
+                        </HBox>
+                        <JFXButton fx:id="dashboardBtn" graphicTextGap="20.0" maxWidth="1.7976931348623157E308" minHeight="60.0" styleClass="sidebarBtn-selected" text="Tableau de bord">
+                            <graphic>
+                                <FontIcon iconLiteral="fas-layer-group" iconSize="20" />
+                            </graphic>
+                        </JFXButton>
+                        <VBox>
+                            <children>
+                                <JFXButton fx:id="gestionMedicaleBtn" graphicTextGap="20.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" onAction="#onMenu1ButtonClicked" styleClass="sidebarBtn" text="Gestion Médicale">
+                                    <graphic>
+                                        <FontIcon iconLiteral="fas-plus" iconSize="20" selectionEnd="1" selectionStart="1" strokeWidth="0.0" styleClass="gestion-medicale-icon" wrappingWidth="17.5" />
+                                    </graphic>
+                                    <VBox.margin>
+                                        <Insets />
+                                    </VBox.margin>
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                </JFXButton>
+                                <VBox fx:id="gestionMedicaleMenu" managed="false" prefWidth="100.0" visible="false" VBox.vgrow="NEVER">
+                                    <padding>
+                                        <Insets left="51.0" />
+                                    </padding>
+                                    <children>
+                                        <JFXButton fx:id="patientsBtn" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" styleClass="sidebarUnderBtn" text="Patients" onAction="#handleToPatients">
+                                            <graphic>
+                                                <FontIcon iconLiteral="fas-users" iconSize="18" />
+                                            </graphic>
+                                        </JFXButton>
+                                        <JFXButton fx:id="prescriptionsBtn" graphicTextGap="25.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" styleClass="sidebarUnderBtn" text="Préscriptions" onAction="#handleToPrescriptions">
+                                            <graphic>
+                                                <FontIcon iconLiteral="fas-file-medical" iconSize="20" styleClass="prescriptions-icon" />
+                                            </graphic>
+                                        </JFXButton>
+                                        <JFXButton fx:id="medecinBtn" graphicTextGap="22.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" styleClass="sidebarUnderBtn" text="Médecins" onAction="#handleToMedecins">
+                                            <graphic>
+                                                <FontIcon iconLiteral="fas-user-md" iconSize="20" styleClass="medecins-icon" />
+                                            </graphic>
+                                        </JFXButton>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT">
+                            <children>
+                                <JFXButton fx:id="stockBtn" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" onAction="#onMenu2ButtonClicked" styleClass="sidebarBtn" text="Stock">
+                                    <graphic>
+                                        <FontIcon iconLiteral="fas-box-open" iconSize="20" styleClass="stock-icon" />
+                                    </graphic>
+                                </JFXButton>
+                                <VBox fx:id="stockMenu" managed="false" visible="false" VBox.vgrow="NEVER">
+                                    <children>
+                                        <JFXButton fx:id="listeDesProduitsBtn" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" styleClass="sidebarUnderBtn" text="Liste des Produits" onAction="#handleToListedesProduits">
+                                            <graphic>
+                                                <FontIcon iconLiteral="fas-capsules" iconSize="20" />
+                                            </graphic>
+                                        </JFXButton>
+                                        <JFXButton fx:id="listeDesTypesBtn" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" styleClass="sidebarUnderBtn" text="Liste des Types" onAction="#handleToListeDesTypes">
+                                            <graphic>
+                                                <FontIcon iconLiteral="fas-list" iconSize="20" />
+                                            </graphic>
+                                        </JFXButton>
+                                    </children>
+                                    <padding>
+                                        <Insets left="51.0" />
+                                    </padding>
+                                </VBox>
+                            </children>
+                        </VBox>
+                        <VBox>
+                            <children>
+                                <JFXButton fx:id="transactionsBtn" graphicTextGap="20.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" onAction="#onMenu3ButtonClicked" styleClass="sidebarBtn" text="Transactions">
+                                    <graphic>
+                                        <FontIcon iconLiteral="fas-exchange-alt" iconSize="20" styleClass="FontIcon" />
+                                    </graphic>
+                                </JFXButton>
+                                <VBox fx:id="transactionsMenu" managed="false" visible="false" VBox.vgrow="NEVER">
+                                    <children>
+                                        <JFXButton fx:id="entreeBtn" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" styleClass="sidebarUnderBtn" text="Entrées" onAction="#handleToEntree">
+                                            <graphic>
+                                                <FontIcon iconLiteral="fas-arrow-right" iconSize="20" />
+                                            </graphic>
+                                        </JFXButton>
+                                        <JFXButton fx:id="sortiesBtn" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" styleClass="sidebarUnderBtn" text="Sorties" onAction="#handleToSortie">
+                                            <graphic>
+                                                <FontIcon iconLiteral="fas-arrow-left" iconSize="20" />
+                                            </graphic>
+                                        </JFXButton>
+                                        <JFXButton fx:id="facturesBtn" graphicTextGap="19.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="64.0" styleClass="sidebarUnderBtn" text="Factures" onAction="#handleToFacture">
+                                            <graphic>
+                                                <FontIcon iconLiteral="fas-file-invoice-dollar" iconSize="20" styleClass="facture-icon" />
+                                            </graphic>
+                                        </JFXButton>
+                                    </children>
+                                    <padding>
+                                        <Insets left="51.0" />
+                                    </padding>
+                                </VBox>
+                            </children>
+                        </VBox>
+                        <JFXButton fx:id="utilisateursBtn" graphicTextGap="20.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="60.0" styleClass="sidebarBtn" text="Utilisateurs" onAction="#handleToUtilisateurs">
+                            <graphic>
+                                <FontIcon iconLiteral="fas-id-card" iconSize="20" />
+                            </graphic>
+                        </JFXButton>
+                        <Region prefHeight="185.0" prefWidth="297.0" VBox.vgrow="ALWAYS" />
+                        <VBox alignment="BOTTOM_CENTER" prefHeight="76.0" prefWidth="297.0">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <children>
+                                <JFXButton fx:id="deconnexionBtn" minHeight="50.0" prefHeight="50.0" prefWidth="132.0" text="Se Déconnecter" />
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="80.0" />
+                            </VBox.margin>
+                        </VBox>
+                    </children>
+                    <padding>
+                        <Insets top="20.0" />
+                    </padding>
+                </VBox>
+            </left>
+        </BorderPane>
+    </children>
+</StackPane>

@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url("../Fonts/Poppins/Poppins-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("../Fonts/Poppins/Poppins-Bold.ttf");
+    font-weight: bold;
+}
+*{
+    font-family: Poppins;
+}
+.textfield{
+    -fx-background-color: transparent;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+
+}
+.searchbar{
+    -fx-background-color: transparent;
+    -fx-prompt-text-fill: #8C8C8C;
+    -fx-font-size: 15px;
+
+    -fx-border-color: transparent transparent #333333 transparent; /* Bordure inférieure noire */
+    -fx-border-width: 0 0 2px 0; /* Épaisseur de la bordure inférieure */
+}
+#searchIcon{
+    fx-fill: #333333;
+}
+.sidebarBtn{
+    -fx-alignment: center-left; /* Aligne le texte à gauche horizontalement tout en le gardant centré verticalement */
+    -fx-padding: 0 15px 0 15px; /* Ajuste l'espacement intérieur du bouton (gauche, haut, droite, bas) */
+    -fx-background-radius: 0 ;
+    -fx-text-fill: #333333;
+    -fx-font-size: 22px;
+    -fx-font-weight: normal;
+
+
+
+}
+.sidebarBtn FontIcon{
+    -fx-fill: #333333;
+}
+.sidebarUnderBtn{
+    -fx-alignment: center-left; /* Aligne le texte à gauche horizontalement tout en le gardant centré verticalement */
+    -fx-padding: 0 15px 0 15px; /* Ajuste l'espacement intérieur du bouton (gauche, haut, droite, bas) */
+    -fx-text-fill: #333333;
+    -fx-font-size: 22px;
+    -fx-font-weight: normal;
+
+
+}
+.sidebarUnderBtn FontIcon{
+    -fx-fill: #333333;
+}
+.sidebarUnderBtn:hover{
+    -fx-text-fill: #3A7B8C;
+}
+.sidebarUnderBtn:hover FontIcon{
+    -fx-fill: #3A7B8C;
+}
+.sidebarUnderBtn-selected FontIcon{
+    -fx-fill: #3A7B8C;
+}
+.sidebarUnderBtn-selected{
+    -fx-alignment: center-left; /* Aligne le texte à gauche horizontalement tout en le gardant centré verticalement */
+    -fx-padding: 0 15px 0 15px; /* Ajuste l'espacement intérieur du bouton (gauche, haut, droite, bas) */
+    -fx-fill: #3A7B8C;
+    -fx-text-fill: #3A7B8C;
+    -fx-font-size: 22px;
+
+}
+.sidebarBtn:hover{
+    -fx-background-color: #3A7B8C;
+    -fx-text-fill: white;
+
+}
+.sidebarBtn:hover FontIcon{
+    -fx-fill: white;
+}
+.sidebarBtn-selected{
+    -fx-alignment: center-left; /* Aligne le texte à gauche horizontalement tout en le gardant centré verticalement */
+    -fx-padding: 0 15px 0 15px; /* Ajuste l'espacement intérieur du bouton (gauche, haut, droite, bas) */
+    -fx-background-radius: 0 ;
+    -fx-background-color: #3A7B8C;
+    -fx-text-fill: white;
+    -fx-font-size: 22px;
+
+}
+.sidebarBtn-selected FontIcon{
+    -fx-fill: white;
+}
+#deconnexionBtn{
+    -fx-background-color: #3A7B8C ;
+    -fx-text-fill: white ;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(43, 122, 139, 0.3), 20, 0.3, 0, 0);
+    -fx-border-radius: 15px ;
+    -fx-background-radius: 8;
+
+}
+#deconnexionBtn:hover{
+    -fx-effect: dropshadow(gaussian, rgba(43, 122, 139, 0.3), 30, 0.5, 0, 0);
+}
+.buttonN{
+    -fx-background-color: white ;
+    -fx-text-fill: #3A7B8C ;
+    -fx-border-radius: 20px ;
+    -fx-background-radius: 20 ;
+    -fx-border-width: 2px ;
+    -fx-border-color: #3A7B8C;
+}
+.buttonN:hover{
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 4);
+}
+.buttonN FontIcon{
+    -fx-fill: #3A7B8C !important;
+}
+#anchorPane{
+    -fx-background-color: #DBECF0;
+}
+.labelVert{
+    -fx-text-fill: #3A7B8C;
+}
+.labelbold{
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+.gestion-medicale-icon {
+    -fx-translate-x: 2; /* Déplacement horizontal (+ pour droite, - pour gauche) */
+    -fx-translate-y: 0; /* Déplacement vertical (+ pour bas, - pour haut) */
+}
+.prescriptions-icon {
+    -fx-translate-x: 4; /* Déplacement horizontal (+ pour droite, - pour gauche) */
+    -fx-translate-y: 0; /* Déplacement vertical (+ pour bas, - pour haut) */
+}
+.medecins-icon {
+    -fx-translate-x: 3; /* Déplacement horizontal (+ pour droite, - pour gauche) */
+    -fx-translate-y: 0; /* Déplacement vertical (+ pour bas, - pour haut) */
+}
+.stock-icon {
+    -fx-translate-x: -2; /* Déplacement horizontal (+ pour droite, - pour gauche) */
+    -fx-translate-y: 0; /* Déplacement vertical (+ pour bas, - pour haut) */
+}
+.detailsBtn{
+    -fx-background-color: white ;
+    -fx-text-fill:  #3A7B8C;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(43, 122, 139, 0.3), 20, 0.3, 0, 0);
+    -fx-border-radius: 15px ;
+    -fx-background-radius: 15px;
+}
+.facture-icon{
+    -fx-translate-x: 1;
+}
+.filtreVbox{
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px ;
+    -fx-border-color: #3A7B8C;
+    -fx-border-width: 2px ;
+    -fx-max-height: Infinity; /* Expansion maximum */
+
+}
+.filtreVbox .label{
+    -fx-text-fill: #8c8c8c;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+}
+.DatePicker {
+    -fx-font-size: 17px;
+    -fx-font-family: "DM Sans";
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-border-color:  #8A8A8A;
+}
+.DatePicker .text-field {
+    -fx-background-radius: 10px 0 0 10px;
+    -fx-border-radius: 10px 0 0 10px;
+}
+.DatePicker .arrow-button {
+    -fx-background-radius: 0 10px 10px 0;
+    -fx-border-radius: 0 10px 10px 0;
+    -fx-background-color: #3A7B8C;
+    -fx-border-color: #8A8A8A;
+}
+.DatePicker .arrow-button .arrow {
+    -fx-background-color: #FFFFFF; /* Couleur de la flèche */
+}
+.hboxCarte{
+    -fx-background-color: #68AEC0;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+
+}
+.labelCarte{
+    -fx-text-fill:#F1F1F1;
+    -fx-font-size: 18px;
+}
+.labelCarteNoir{
+    -fx-text-fill: #333333;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+.ConsulterBtn{
+    -fx-background-color: #E9F3F6;
+    -fx-text-fill: #68AEC1;
+    -fx-font-size: 18px;
+    -fx-padding: 5px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+}
