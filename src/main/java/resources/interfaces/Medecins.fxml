@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
@@ -19,7 +20,7 @@
 
 <!-- Mise en page principale avec un BorderPane -->
 
-<StackPane fx:id="rootStackPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EntreeController">
+<StackPane fx:id="rootStackPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MedecinsController">
     <children>
         <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="916.0" prefWidth="1200.0" stylesheets="@../Styles/Medecins.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
 
@@ -71,6 +72,14 @@
                                     </columnResizePolicy>
                                 </TableView>
                             </children></AnchorPane>
+                  <VBox fx:id="filtreVbox" alignment="TOP_CENTER" layoutX="236.0" layoutY="91.0" managed="false" maxHeight="1.7976931348623157E308" styleClass="filtreVbox" visible="false" AnchorPane.rightAnchor="350.0" AnchorPane.topAnchor="215.0">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <JFXComboBox fx:id="comboBoxSpecialite" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Spécialité" styleClass="ComboBox" />
+                     </children>
+                  </VBox>
                     </children></AnchorPane>
             </center>
             <left>
